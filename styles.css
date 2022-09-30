@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--grey);
 }
 
 p {
@@ -35,52 +36,88 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* Start Here */
+.section-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding-top: 2rem;
+  width: 100%;
 }
 
-.counter-div {
-  width: 40rem;
-  border: 1px solid var(--grey);
-  padding: 1rem;
-  background-color: var(--light-blue);
-  color: var(--white);
-  text-align: center;
-  border-radius: 5px;
+.form-container {
+  width: 30%;
+}
+.notes-container {
+  width: 70%;
 }
 
-.counter-div > * {
-  margin-bottom: 2rem;
-}
-
-.count {
-  font-size: 4rem;
-}
-
-.buttons button {
-  padding: 1rem;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  color: var(--white);
-  font-weight: 700;
-  border: none;
+form > * {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
   outline: none;
+  font-size: 1.6rem;
+  padding: 7px;
+  border: 1px solid #777;
   border-radius: 3px;
+  width: 100%;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+
+.note-cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-counter {
+  font-size: 1.4rem;
+  background-color: var(--dark-grey);
+  padding: 1px 3px;
+  display: inline-block;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.note-btn {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color: var(--white);
   cursor: pointer;
 }
 
-button.subtract {
-  background-color: orangered;
+.edit-btn {
+  background-color: var(--color-primary);
 }
-button.reset {
-  background-color: var(--white);
-  color: var(--black);
+
+.note-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-primary);
 }
-button.add {
-  background-color: green;
+
+.note-text {
+  font-size: 1.4rem;
 }
