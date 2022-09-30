@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please do a quick survey to let us know about your anime prefrence</p>
+
+    <div class="form">
+        <form action="mailto" id="survey-form">
+            <fieldset class="name">
+                <label id="name-label">Name:<input type="text" name="name" id="name" placeholder="Enter  your  Name" required></label>
+                <label id="email-label">Email:<input type="email" name="email" id="email" placeholder="Enter  your  Email" required></label>
+                <label id="number-label">Age:<input type="number" name="age" id="number" min="13" max="100" placeholder="Enter  your  age" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label id="dropdown"> Occupation    
+                    <select name="occupation" id="dropdown">
+                        <option value="">(select anyone)</option>
+                        <option value="1">Student</option>
+                        <option value="1">Employed</option>
+                        <option value="2">Retired</option>
+                        <option value="3">Not working/studying</option>
+                        <option value="4">Prefer not to say</option>
+                    </select>
+                </label>
+                <label id="prefrence"> Select your Prefrence
+                    <div class="one"><input type="radio" name="prefrence" value="No prefrence" checked> No prefrence</div>
+                    <div class="one"><input type="radio" name="prefrence" value="I prefer Sub over Dub" > I prefer Sub over Dub</div>
+                    <div class="one"><input type="radio" name="prefrence" value="I prefer Dub over Sub" > I prefer Dub over Sub</div>
+                    <div class="one"><input type="radio" name="prefrence" value="I like them both" > I like them both</div>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="" id="genre">Favourite genre(s):
+                    <div class="one"><input type="checkbox" name="genre" id="" value="shonen">shonen</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="seinin">seinin</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="shojo">shojo</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="shojo ai/ shonen ai">shojo ai/ shonen ai</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="comedy">comedy</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="psychology">psychology</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="slice of life">slice of life</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="horror">horror</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="mecha">mecha</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="idol">idol</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="ecchi">ecchi</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="isekai">isekai</div>
+                    <div class="one"><input type="checkbox" name="genre" id="" value="other">other</div>
+                </label>
+                <label for="" id="comment">would you like to say something:
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="talk about your favourite anime or say something to me..."></textarea>
+                </label>
+            </fieldset>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
