@@ -1,0 +1,74 @@
+* {
+    margin: 0%;
+    padding:0%;
+    font-family: 'Koulen', cursive;
+
+}
+
+body {
+    background: rgb(57, 104, 135);
+    background: linear-gradient(73deg, rgba(57, 104, 135,2) 0%, rgba(62,84,143,1) 50%, rgba(93,113,218,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+h1, p {
+    text-align: center;
+    margin-top: 10px;
+    color: #EFEFEF;
+}
+
+
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* form section */
+
+.form {
+    width: 60%;
+    margin-left: 5%;
+    background-color: #90e0ef ;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin:0.5rem 0;
+}
+
+fieldset{
+    border: none;
+    margin-left: 10px;
+    
+}
+
+input[required],textarea, select{
+    display: block;
+    margin-top: 10px;
+    width: 40%;
+    border: none;
+}
+
+.one{
+    display:block;
+    margin-left: 40px;
+
+}
+
+textarea {
+    width: 80%;
+    height: 6em;
+}
+
+button{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
