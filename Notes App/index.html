@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <h1 class="text-light">Smart Notes</h1>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container section-container">
+        <!-- form container -->
+        <div class="form-container">
+          <h2>Add Note</h2>
+          <hr />
+          <form>
+            <input type="text" id="note-title" placeholder="Note title" />
+            <textarea
+              id="note-text"
+              cols="30"
+              rows="10"
+              placeholder="Note details"
+            ></textarea>
+            <button id="add-btn" class="btn btn-danger btn-lg">Add Note</button>
+          </form>
+        </div>
+
+        <!-- notes container -->
+        <div class="notes-container">
+          <div class="container">
+            <div class="notes-header">
+              <h2>Your Notes</h2>
+              <button class="clear note-btn">Delete all notes</button>
+            </div>
+            <hr />
+
+            <div id="notes">
+              <!-- <div class="note">
+                <div class="note-cta">
+                  <p class="note-counter">Note 1</p>
+                  <div class="note-cta-btn">
+                    <button class="note-btn">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                    <button class="note-btn edit-btn">
+                      <i class="fas fa-edit"></i> Edit
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <h3 class="note-title">Title: Hello</h3>
+                <p class="note-text">This is some content...</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
