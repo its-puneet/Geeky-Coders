@@ -1,6 +1,6 @@
 # Geeky-Coders
 
-First time contributors of Hacktoberfest 2022. This is a simple repo that helps new Open Source developers to start with contributions.
+All About Programming Contributors of Hacktoberfest 2022. This is a simple repo that helps new Open Source developers to start with contributions.
 
 ![image](https://user-images.githubusercontent.com/1830380/193360152-0902f5c1-2565-45ae-9975-aa44a0c2c933.png)
 
@@ -12,5 +12,7 @@ You can contribute in the field of:
 * Machine Learning
 * Front End Development
 * Back End APIs
-* Graphic Design
+* Data Science
+* Full stack
+* App Development
 * And lot more...
