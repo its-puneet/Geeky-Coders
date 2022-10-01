@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 2px;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tip-calculator-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+          url(https://wallpaperaccess.com/full/1306046.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      .tip-calculator-div {
+        position: absolute;
+        top: 15vh;
+        left: 35vw;
+        width: 30vw;
+        padding: 1.5rem 2.5rem;
+        border-radius: 0.5rem;
+        color: white;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+      }
+      .tip-calculator-div h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .input-div {
+        width: 100%;
+        padding: 0.7rem 1rem;
+        margin: 1rem auto;
+        font-size: large;
+        font-weight: bold;
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        outline: none;
+        letter-spacing: 2px;
+      }
+      .question {
+        margin: 1rem 0;
+        font-weight: bold;
+      }
+      .service-options input {
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        cursor: pointer;
+      }
+      .service-options label {
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .button {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 0.5rem 0;
+        font-size: large;
+        border: none;
+        background-color: rgb(0, 117, 159);
+        color: white;
+        cursor: pointer;
+        letter-spacing: 2px;
+      }
+      .button:hover {
+        background-color: rgb(3, 100, 135);
+      }
+      #amountText {
+        font-size: large;
+      }
+      @media screen and(max-width: 1024px) {
+        .tip-calculator-div {
+          width: 40vw;
+          left: 30vw;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .tip-calculator-div {
+          width: 60vw;
+          left: 20vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="tip-calculator-section">
+      <div class="tip-calculator-div">
+        <h1 class="title">Tip Calculator</h1>
+        <div class="flex">
+          <input
+            id="amount"
+            type="number"
+            placeholder="Amount"
+            class="input-div"
+          />
+        </div>
+        <div>
+          <p class="question">How was our service?</p>
+          <form class="service-options">
+            <input
+              type="radio"
+              id="Excellent"
+              name="service"
+              value="Excellent"
+              class="service Excellent"
+            />
+            <label for="Excellent">Excellent</label><br />
+            <input
+              type="radio"
+              id="Good"
+              name="service"
+              value="Good"
+              class="service Good"
+            />
+            <label for="Good">Good</label><br />
+            <input
+              type="radio"
+              id="Average"
+              name="service"
+              value="Average"
+              class="service Average"
+            />
+            <label for="Average">Average</label><br />
+          </form>
+        </div>
+        <div class="flex">
+          <button class="button">Calculate</button>
+        </div>
+        <p id="amountText" class=""></p>
+      </div>
+    </section>
+    <script>
+      const amount = document.getElementById("amount");
+      const button = document.querySelector("button");
+      const amountText = document.getElementById("amountText");
+      const services = document.querySelectorAll(".service");
+      let percent = 0;
+      services.forEach((service) => {
+        service.addEventListener("click", () => {
+          if (service.classList.contains("Excellent")) percent = 15;
+          else if (service.classList.contains("Good")) percent = 10;
+          else if (service.classList.contains("Average")) percent = 5;
+        });
+      });
+      button.addEventListener("click", () => {
+        let amt = Number(amount.value);
+        calculateTip(amt);
+      });
+
+      const calculateTip = (amt) => {
+        let tipAmount = amt * (percent / 100);
+        calculateTotalAmout(tipAmount, amt);
+      };
+
+      const calculateTotalAmout = (tipAmount, amt) => {
+        const payableAmount = amt + tipAmount;
+        if (amount.value === "") {
+          alert("Please fill the amount!");
+        } else if (percent === 0) {
+          alert("Please select our service category!");
+        } else {
+          let finaltext = `Tip payable is Rs. <b>${tipAmount}</b> by taking, <b>${percent}%</b> of total bill and total amount to be paid is Rs. <b>${payableAmount}</b>`;
+          amountText.innerHTML = finaltext;
+        }
+      };
+    </script>
+  </body>
+</html>
