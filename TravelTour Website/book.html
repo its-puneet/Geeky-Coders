@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Flight</title>
+    <!-----bootstrap----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!------font awesome----->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-----css link------->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/book.css">
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <div id="preloader" class="loader">
+    <img src="images/eb707ae7096cc8df384f1bf87dab547a.gif" alt="">
+  </div>
+     <!----------navbar------------>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 ">
+      <div class="container px-3 ">
+        <a class="navbar-brand" href="#"><img src="images/main.png" alt="" height="48px" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-lg-3">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+             <li class="nav-item ms-lg-3">
+              <a class="nav-link " aria-current="page" href="package.html">Packages</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="nav-link " aria-current="page" href="index.html">Services</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="nav-link " aria-current="page" href="index.html">Gallery</a>
+            </li>
+           
+            
+          </ul>
+          <div class="ms-lg-3">
+            <button type="button" class="btn rounded-pill btn-col "> Book Now </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!------------------------------------>
+    <header >
+      <div class="showcase1 " >
+         <div class="container text-center py-4" >
+           <div class="row py-5 justify-content-center">
+         <h2>Book Now</h2>
+       </div>
+      </div>
+      </div>
+       </header>
+      <!----------------------------------------------> 
+      <section class="form py-5">
+        <div class="container  d-flex align-items-center justify-content-center">
+          <div class=" row main px-4">
+            
+              <div class="header card-header "> 
+                <div class="btn-box  d-flex justify-content-center align-items-center"> 
+                  <div id="btn"></div>        
+               <div class="flight "> <button type='button' onclick='flight(this)' class='toggle-btn '><i class="fas fa-plane"></i> <span>Flight</span></button></div>
+               <div class="flight ">  <button type='button' onclick='hotel(this)' class='toggle-btn hot'><i class="fas fa-hotel"></i> <span>Hotel</span></button></div></div>
+              </div>
+              <div class="header2 card-body p-4">
+               <div class="flight1" id="flight">
+                <form class="row g-3" id="form">
+                  <div class="col-md-6 khus">
+                    <label class="form-label">Name</label>
+                    <input id="name" class="form-control" >
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khus">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control">
+                  
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khus">
+                    <label for="inputPassword4" class="form-label">From</label>
+                    <select class="form-control from" name="from" id="from"  aria-placeholder="hello" >
+                      <option value="" selected hidden>From City/Airport</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
+                    <small> Error message</small>
+                    </div>
+                  <div class="col-md-6 khus">
+                    <label for="inputPassword4" class="form-label">To</label>
+                    <select class="form-control " name="from" id="to"  aria-placeholder="hello" >
+                      <option value="" selected hidden>To City/Airport</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khus">
+                    <label class="form-label">Start Date</label>
+                    <input type="date" id="sdate" class="form-control sdate" > 
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khus">
+                    <label class="form-label">End Date</label>
+                    <input type="date" id="edate" class="form-control edate" >
+                    <small>Error message</small>
+                  </div>
+                 <div class="col-md-6 khus">
+                  <label class="form-label">No. of Adults</label>
+                  <input id="adult" class="form-control" >
+                  <small>Error message</small>
+                 </div>
+                 <div class="col-md-6 khus">
+                  <label class="form-label">No. of Children</label>
+                  <input id="child" class="form-control" >
+                  <small>Error message</small>
+                 </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Book</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="hotel " id="hotel"> 
+                <form class="row g-3" id="form1">
+                  <div class="col-md-6 khu">
+                    <label class="form-label">Name</label>
+                    <input id="name1" class="form-control" >
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khu">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="email1" class="form-control">
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khu">
+                    <label for="inputPassword4" class="form-label">City</label>
+                    <select class="form-control from" name="from" id="from1"  aria-placeholder="hello" >
+                      <option value="" selected hidden> City</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
+                    <small> Error message</small>
+                    </div>
+                  <div class="col-md-6 khu ">
+                    <label for="inputPassword4" class="form-label">Room Type</label>
+                    <select class="form-control " name="to" id="to1"  aria-placeholder="hello" >
+                      <option value="" selected hidden>Please Select</option>
+                      <option value="1">Standard Room (1 to 2 People)</option>
+                      <option value="2">Family Room (1 to 4 People)</option>
+                      <option value="3">Private Room(1 to 3 people)</option>
+                      <option value="4">Mix Dorm Room</option>
+                      <option value="5">Female Dorm Room (6 People) </option>
+                      <option value="6">Male Dorm Room (6 People)</option>
+                     
+                    </select>
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khu">
+                    <label class="form-label">Check-in Date</label>
+                    <input type="date" id="sdate1" class="form-control sdate" > 
+                    <small>Error message</small>
+                  </div>
+                  <div class="col-md-6 khu">
+                    <label class="form-label">Check-out Date</label>
+                    <input type="date" id="edate1" class="form-control edate" >
+                    <small>Error message</small>
+                  </div>
+                 <div class="col-md-6 khu">
+                  <label class="form-label">Free Pickup ?</label><br>
+                  <input type="radio"><label class="form-label"> Yes Please! - Pick me up on arrival</label><br>
+                  <input type="radio" ><label class="form-label"> No Thanks - I'll make my own way there</label>
+                 </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Book</button>
+                  </div>
+
+              </div>
+
+              </div>
+              </div>
+              </div> 
+      </section>
+
+       <!-------------------------------------------------------->
+      
+<!------------------------footer------------------------->
+
+<footer class="foot">
+  <div class="container py-4">
+     
+   <div class="row mt-4 px-3 mx-auto ">
+     <div class="col-md-3 mb-2 mx-auto ">
+       <figure><img src="images/main.png" alt="" height="40%" width="40%"></figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+     </div>
+    
+  
+     <div class="col-md-3 mx-auto mb-2 ">
+           <h5>Useful Links</h5>
+           <div class="underline1 mb-4"></div>
+              
+           <p><a href="index.html" class="anc">Home</a></p>
+           <p><a href="#" class="anc">Book</a></p>
+           <p><a href="package.html" class="anc">Packages</a></p>
+           <p><a href="index.html" class="anc">Gallery</a></p>
+            
+     </div>
+     
+     <div class="col-md-3 mb-2 cont">
+      <h5>Reach Us</h5>
+      <div class="underline1 mb-4"></div>
+      <h6><i class="far fa-envelope icon ">  </i> Email</h6>
+     <p>travelguys@gmail.com</p>
+      <h6><i class="fas fa-phone-alt icon "> </i> Call Us At</h6>
+      <p>+91 9865021867</p>
+       
+    </div>
+    <div class="col-md-3 subs  mx-auto mb-2 ">
+       <h5>Subscribe </h5>
+       <div class="underline1 mb-4"></div>
+         <div class="d-flex">
+        <input type="text" class="form-control let " placeholder="Email Address" aria-label="First name"><button type="submit" class=" btn in btn-primary "><i class="fa fa-paper-plane"></i></button>
+       </div>
+       <h6 class="pt-3">Follow Us</h6>
+       <a href="#" class="so1">
+         <i class="fab fa-facebook-f p-2 text-center so2"></i>
+       </a>
+       <a href="#" class="so1 ">
+         <i class="fab fa-twitter p-2 so3"></i>
+       </a>
+       <a href="#" class="so1 ">
+         <i class="fab fa-google p-2 so4"></i>
+       </a>
+       <a href="#" class="so1  ">
+         <i class="fab fa-instagram text-center p-2 so5"></i>
+       </a>
+     
+ </div>
+   </div>
+  </div>
+
+  <div class="text-center p-3 sie">
+   Copyright © 2021 TheTravelGuy | Powered by Asper Team
+  </div>
+</footer>
+    <!------------------------------------------------------------>
+   <script src="js/book.js"></script>
+   <script src="js/book1.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <script>
+      var loader = document.querySelector(".loader");
+      window.addEventListener("load", vanish);
+     function vanish(){
+       loader.classList.add("disappear");
+     }
+     
+     </script>
+<script>
+
+  var x=document.getElementById('flight');
+		var y=document.getElementById('hotel');
+	var z =document.getElementById('btn');
+		function flight(button)
+		{
+			x.style.left='0';
+			y.style.left='103%';
+		  z.style.left='0px';
+		}
+		function hotel(button)
+		{
+			x.style.left='-120%';
+			y.style.left='0';
+      z.style.left='100px';	
+		}
+
+</script>
+<script>
+  var modal = document.getElementById('booking-form');
+  window.onclick = function(event)
+  {
+    if(event.target == modal){
+      modal.style.display="none";
+    }
+  }
+</script>
+
+
+</body>
+</html>
