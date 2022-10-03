@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: #1e2024;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.heading {
+  text-align: center;
+  margin: 1rem 0;
+}
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 1.2rem;
+}
+.emotion {
+  padding: 1rem;
+}
+label {
+  display: block;
+  padding: 0.5rem 0;
+}
+::placeholder {
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+}
+input {
+  padding: 1.2rem 1rem;
+  font-size: 0.9rem;
+  width: 97%;
+  margin-bottom: 1rem;
+}
+button {
+  border: none;
+  font-weight: 700;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 97%;
+  background-color: #6d28d9;
+  margin: 1rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+.happyTheme {
+  background-image: url("./images/confetti.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+footer {
+  background-color: #161b23;
+  opacity: 0.5;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 0.4rem 0;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+hr {
+  border: 1px solid #111;
+  margin: 0.5rem 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.icon {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
