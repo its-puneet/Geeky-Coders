@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: var(--grey);
+  /* background-color: var(--grey); */
 }
 
 p {
@@ -39,20 +39,46 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
+}
+h1{
+  font-size: 4rem;
+  font-weight: 700;
+
+}
+h2{
+  font-size:3rem ;
 }
 
 /* Start Here */
+
+.navbar{
+  font-family: 'Roboto', sans-serif;
+  background-image: url("./notes.jpg");
+  background-size: cover;
+  background-position: center;
+  
+   color:antiquewhite;
+
+}
+
 .section-container {
   display: flex;
   padding-top: 2rem;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .form-container {
-  width: 30%;
+ 
+  width: 50%;
 }
 .notes-container {
-  width: 70%;
+  padding: 4em 0 0 ;
+  width: 60%;
 }
 
 form > * {
@@ -98,14 +124,36 @@ form textarea {
   border-radius: 3px;
 }
 
+#add-btn{
+  font-size: 1.5em;
+  background-color: #db6400;
+  font-size: 1.5rem;
+  width: 30%;
+  padding: .5em;
+  transition: all 0.3s linear;
+  border: none;
+  /* transform: translateX(12em);  */
+ }
+
+#add-btn:hover{
+  transform: scale(1.2);
+} 
+
 .note-btn {
-  padding: 5px;
+  
+  padding: 5px 15px;
+  
   outline: none;
+ 
   border: none;
   border-radius: 3px;
-  background-color: red;
+  background-color: #db6400;
   color: var(--white);
   cursor: pointer;
+}
+.delete-btn{
+font-size: 1.5em;
+padding: .6em;
 }
 
 .edit-btn {
@@ -113,11 +161,14 @@ form textarea {
 }
 
 .note-title {
-  font-size: 1.6rem;
+  font-size:2.5rem;
   font-weight: 600;
   color: var(--color-primary);
 }
 
 .note-text {
-  font-size: 1.4rem;
+  font-size: 2rem;
+}
+#notes{
+  font-size: 1.8em;
 }
