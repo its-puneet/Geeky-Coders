@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Flight</title>
+    <!-----bootstrap----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!------font awesome----->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-----css link------->
+    <link rel="stylesheet" href="css/main.css">
+   
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+ 
+<div id="preloader" class="loader">
+  <img src="images/eb707ae7096cc8df384f1bf87dab547a.gif" alt="">
+</div>
+<!------------------------------------>
+  <div class="color-switcher " id="color-swit">
+    <div class="switcher-btn shadow py-3  ps-3 d-flex ">
+      <i class="fas fa-cog " ></i>
+    </div>
+    <div class="shadow"><h3 class="theme-customiser py-4 px-4">
+      THEME CUSTOMISER 
+    </h3>
+</div>
+
+ <div class="theme-buttons-container my-1 py-3 px-4 " id="colos">
+
+   <button id="btn-1" class="theme-button btn shadow w-100 mb-2 " data-color="#222222"  data-color-light="#ffffff" data-fill="#468ffd" style="background-color: #0061f2; background-image: linear-gradient(45deg,#fff,#222222);"><span class="text1">Dark Theme</span></button>
+   <button id="btn-2" class="theme-button btn  shadow w-100 mb-2" data-color="#ffffff" data-color-light="#222222" data-fill="#30306e" style="background-color: #1da1f5; background-image: linear-gradient(45deg,#222,#fff);"><span  class="text2" >Light Theme</span></button>
+    </div>
+
+</div>
+
+    <!----------navbar------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 " id="top">
+        <div class="container px-3 ">
+          <a class="navbar-brand" href="#"><img src="images/main.png" alt="" height="48px" width="100px"></a>
+          <button class="navbar-toggler" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="elem">
+              <li class="nav-item ms-lg-3">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+               <li class="nav-item ms-lg-3">
+                <a class="nav-link " aria-current="page" href="package.html">Packages</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="nav-link "  aria-current="page" href="#service">Services</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="nav-link " aria-current="page" href="#gallery">Gallery</a>
+              </li>
+           
+              <li class="nav-item ms-lg-3">
+                <button type="button" class="btn rounded-pill  btn-color2 "> <a href="book.html"> Book Now </a> </button>
+              </li>
+            </ul>
+                     </div>
+        </div>
+      </nav>
+      <!------------------------------------>
+     
+  <header >
+    
+ <div class="showcase">
+    <!--<img src="images/h1_hero.jpg" class="card-img" alt="..."  height="100%">-->
+    <div class="container  align-items-center justify-content-center text-center py-5" >
+      <div class="row py-5 ">
+       <div class="col-md-12">
+      <div class="body mt-5 p-3">
+        <div class="lorem text-center"> <span>Explore The Thrill</span>
+          <h1>Discover Great Places</h1>
+        <form action="#" class="search-box ">
+            <div class="input-form my-2" >
+              <input type="text" placeholder="Enter Your Destination">
+            </div>
+            <div class="select-form">
+             <div class="select-items my-2">
+              <select id="inputState" class="form-select">
+                <option selected>All Category</option>
+                <option>International Departure</option>
+                <option>Domestic Departure</option>
+                <option>Road Trip Tour</option>
+                <option>Honeymoon Package</option>
+                <option >Solo Tour</option>
+               
+              </select>
+             </div>
+            </div>
+            <div class="select-form my-2">
+ <a href="#">Search</a>
+            </div>
+          </form>
+        </div>
+      </div> 
+    </div>
+    </div>
+ </div>
+ </div>
+ <a href="#top">  <button id="btnScrollToTop" onclick="topFunction()">
+  <i class="fas fa-arrow-up "></i>
+</button> </a>
+  </header>
+      
+<!------------------------book now----------------------------->
+<section class="py-5"  id="book" data-aos="fade-up">
+<div class="container " >
+ <div class="heading">
+   <span>B</span>
+   <span>O</span>
+   <span>O</span>
+   <span>K</span>
+   <span class="space"></span>
+   <span>N</span>
+   <span>O</span>
+   <span>W</span>
+ </div>
+ <div class=" mt-3">
+   <div class="row mx-auto">
+     <div class="col-md-6 text-center my-auto">
+       <img src="images/book1.png" alt="" width="80%" height="50%">
+     </div>
+     <div class="col-md-6 my-auto">
+       <h3>Explore New Places , Adventure Awaits.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, beatae quae tempore tenetur ipsam neque similique ea non commodi sit illum qui minima consequatur. Libero soluta nam numquam dolor temporibus.</p>
+      <p>Plan your trip with us.</p>
+      <div class=" py-2">
+        <button type="button" class="btn booki rounded-pill btn-color "> <a href="book.html" class="rang">Book Now </a> <i class="far fa-arrow-alt-circle-right 5x ms-2"></i></button>
+      </div>
+    </div>
+   </div>
+ </div>
+</div>
+
+</section>
+<!------------------Packages---------------------->
+<section class=" package pt-1"  id="change">
+  <div class="heading container py-4"  data-aos="fade-up">
+    <span>P</span>
+    <span>A</span>
+    <span>C</span>
+    <span>K</span>
+    <span>A</span>
+    <span>G</span>
+    <span>E</span>
+    <span>S</span>
+  </div>
+  <div class="container mx-auto py-4"  data-aos="fade-up">
+    <div class="row mx-auto g-3">
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/mumbai.jpg" class="card-img-top" alt="..." height="200px" width="300px" >
+          <div class="card-body p-4">
+            <h5 class="card-title"> <i class="fa fa-map-marker-alt fill" ></i> Mumbai</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in a little bit longer.</p>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" far fa-star fill"></i>
+            <p class="mt-2"><i class="fa fa-rupee-sign"></i> 20,000</p>
+           
+            <button type="button" class="btn btn-color"><a href="package.html" class="rang">Check Now!</a></button>
+
+          </div>
+         
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/hawai.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body p-4">
+            <h5 class="card-title"><i class="fa fa-map-marker-alt fill" ></i> Hawaii</h5></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in  a little bit longer.</p>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" far fa-star fill"></i>
+            <p class="mt-2"><i class="fa fa-rupee-sign"></i> 30,000</p>
+            <button type="button" class="btn btn-color"><a href="package.html" class="rang">Check Now!</a></button>
+          </div>
+         
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/sydney.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="bg-danger special rounded-pill"><p class="m-1">10% off</p></div>
+          <div class="card-body p-4">
+            <h5 class="card-title"><i class="fa fa-map-marker-alt fill" ></i> Sydney</h5></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in  a little bit longer.</p>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fas fa-star fill"></i>
+            <i class=" fa fa-star-half-alt fill"></i>
+            <p class="mt-2"><i class="fa fa-rupee-sign"></i> 35,000</p>
+            <div>
+            <button type="button" class="btn btn-color"><a href="package.html" class="rang">Check Now!</a></button>
+          </div></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center py-4">
+    <button type="button" class="btn booki rounded-pill btn-color"> <a href="package.html" class="rang"> Explore More </a> <i class="far fa-arrow-alt-circle-right 5x ms-2"></i></button>
+  </div>
+  
+</section>
+
+<!-----------------------services-------------------------------->
+<section class="py-4 container services"   id="service" >
+  <div class="heading my-4" data-aos="fade-up">
+    <span>S</span>
+    <span>E</span>
+    <span>R</span>
+    <span>V</span>
+    <span>I</span>
+    <span>C</span>
+    <span>E</span>
+    <span>S</span>
+  </div>
+<div class=" py-4" data-aos="fade-up" >
+  <div class="row g-4 mx-auto" >
+    
+  <div class="col-md-4 text-center">
+  <div class="card h-100 bg-dark shadow text-white">
+    <img src="images/hotel.jpg" class="card-img " alt="..." height="100%">
+    <div class="card-img-overlay  text-center mt-2">
+      <div class="card-body py-3">
+        <i class="fas fa-hotel size mt-1"></i>
+        <h4 class="mt-3">Affordable Hotels</h4>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div></div>
+
+ <div class="col-md-4">
+  <div class="card h-100 bg-dark shadow text-white">
+    <img src="images/food.jpg" class="card-img" alt="..."  height="100%">
+    <div class="card-img-overlay  text-center my-2">
+      <div class="card-body py-3">
+        <i class="fas fa-utensils size  mt-1"></i>
+        <h4 class="mt-3">Food & Drinks</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+     </div>
+    </div>
+  </div></div>
+
+ <div class="col-md-4">
+    <div class="card h-100 bg-dark shadow text-white">
+      <img src="images/safety.jpg" class="card-img" alt="..."  height="100%">
+      <div class="card-img-overlay  text-center mt-2">
+        <div class="card-body py-3">
+          <i class="fas fa-bullhorn size  mt-1"></i>
+          <h4 class="mt-3">Safety Guide</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div></div>
+
+  </div>
+ <div class="row g-4 pt-4 mx-auto">
+     <div class="col-md-4 text-center">
+      <div class="card h-100 shadow bg-dark text-white">
+        <img src="images/around.jpeg" class="card-img " alt="..." height="100%">
+      
+        <div class="card-img-overlay  text-center mt-2">
+          <div class="card-body py-3">
+            <i class="fas fa-globe-asia size mt-1"></i>
+            <h4 class="mt-3">Around The World</h4>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div></div>
+    
+      
+     <div class="col-md-4">
+      <div class="card h-100 shadow bg-dark text-white">
+        <img src="images/travel.jpg" class="card-img" alt="..."  height="100%">
+        <div class="card-img-overlay  text-center my-2">
+          <div class="card-body py-3">
+            <i class="fas fa-plane size  mt-1"></i>
+            <h4 class="mt-3">Fastest Travel</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+         </div>
+        </div>
+      </div></div>
+    
+    
+     <div class="col-md-4">
+        <div class="card h-100 shadow bg-dark text-white">
+          <img src="images/adventure.jpg" class="card-img" alt="..."  height="100%">
+          <div class="card-img-overlay  text-center mt-2">
+            <div class="card-body py-3">
+              <i class="fas fa-hiking size mt-1"></i>
+              <h4 class="mt-3">Adventures</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div></div>
+  </div>
+</div>
+</section>
+<!--------------------------------------------------->
+<div class="newsletter py-5" data-aos="fade-up"  id="news">
+  <div class="container text-center">
+    <div class="row justify-content-center mx-5 ">
+      <div class="col-md-12">
+        <h4>Get Notified About Latest Offer On Packages</h4>
+       </div>
+    </div>
+    <div class="col-md-12 news align-items-center justify-content-center px-4 py-3">
+     <div class="newstext1 my-1"><input type="text" class="form-control" placeholder="Enter Email Address"></div>
+     <div  class="newstext2 my-1"><button class="btn" type="button" id="button-addon2">Join</button></div>
+    </div>
+  </div>
+
+</div>
+<!-----------------gallery-------------------->
+<section class="gallery container py-4"  id="gallery">
+  <div class="heading1 py-2 "  data-aos="fade-up">
+    <span>D</span>
+    <span>E</span>
+    <span>S</span>
+    <span>T</span>
+    <span>I</span>
+    <span>N</span>
+    <span>A</span>
+    <span>T</span>
+    <span>I</span>
+    <span>O</span>
+    <span>N</span>
+    </div>
+    <div class="container mx-auto py-5"  data-aos="fade-up">
+           <div class="row  gx-3 ">
+          <div class="col-md-6 py-2">
+           <div class="card h-100 shadow bg-dark text-white"  >
+             <img src="images/mauritius.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Mauritius </div>
+                
+               </div>
+             </div>
+           </div>
+          </div>
+          <div class="col-md-6 py-2">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/london.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> London </div>
+                </div>
+             </div>
+           </div>
+          </div>
+         </div>
+ 
+      
+         <div class="row  gx-3">
+           <div class=" col-md-6 py-2">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/agra.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first bg m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Agra </div>
+               
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="col-md-3 center py-2">
+           <div class="row pb-2">
+             <div class="col">
+             <div class="card h-100 shadow bg-dark text-white">
+               <img src="images/paris.jpg" class="card-img" alt="..."  height="100%">
+               <div class="card-img-overlay mt-2">
+                 <div class="card-body py-3">
+                   <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Paris </div>
+                   
+                 </div>
+               </div></div>
+             </div>
+            </div>
+        <div class="row ">
+          <div class="col">
+         <div class="card h-100 shadow bg-dark text-white">
+           <img src="images/pack1.jpg" class="card-img" alt="..."  height="100%">
+           <div class="card-img-overlay mt-2">
+             <div class="card-body py-3">
+               <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Egypt </div>
+            </div>
+           </div></div>
+         </div>
+        </div>
+            
+         </div>
+         <div class="col-md-3 py-2">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Singapore </div>
+               
+               </div>
+             </div>
+           </div>
+          </div>
+</div> 
+ </div>
+
+</section>
+
+
+<!---------------------review-------------------------->
+<section class="review "  id="review">
+  <div class="heading py-4 ">
+    <span>R</span>
+    <span>E</span>
+    <span>V</span>
+    <span>I</span>
+    <span>E</span>
+    <span>W</span>
+    </div>
+
+  <div class="container pt-5" data-aos="fade-up">
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slider">
+           <div class="box shadow">
+             <img src="images/i1.jpeg" alt="" height="300px "width="300px">
+             <h4>Martha Richard</h4>
+             
+             <div class="my-2">
+              <a  href="#" class="rang"><i class="fab fa-twitter fa-1x me-1"></i></a>
+              <a  href="#" class="rang"><i class="fab fa-linkedin fa-1x"></i></a>
+            </div>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur.</p>
+             
+             <i class=" fas fa-star fill1"></i>
+            <i class=" fas fa-star fill1"></i>
+            <i class=" fas fa-star fill1"></i>
+            <i class=" fas fa-star fill1"></i>
+            <i class=" fa fa-star-half-alt fill1"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider">
+            <div class="box shadow">
+              <img src="images/i2.jpeg" alt="" height="300px "width="300px">
+              <h4>John Smith</h4>
+              
+              <div class="my-2">
+                <a  href="#" class="rang"><i class="fab fa-twitter fa-1x me-1"></i></a>
+                <a  href="#" class="rang"><i class="fab fa-linkedin fa-1x"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur.</p>
+              <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fa fa-star-half-alt fill1"></i>
+             </div>
+           </div>
+
+           <div class="swiper-slide slider">
+            <div class="box shadow">
+              <img src="images/i4.jpeg" alt="" height="300px "width="300px">
+              <h4>Abigail Joseph</h4>
+              
+              <div class="my-2">
+                <a  href="#" class="rang"><i class="fab fa-twitter fa-1x me-1"></i></a>
+                <a  href="#" class="rang"><i class="fab fa-linkedin fa-1x"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur.</p>
+              
+              <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fa fa-star-half-alt fill1"></i>
+             </div>
+           </div>
+
+           <div class="swiper-slide slider">
+            <div class="box">
+              <img src="images/i3.jpeg" alt="" height="300px "width="300px">
+              <h4>Arthur Morgan</h4>
+              
+              <div class="my-2">
+                <a  href="#" class="rang"><i class="fab fa-twitter fa-1x me-1"></i></a>
+                <a  href="#" class="rang"><i class="fab fa-linkedin fa-1x"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur.</p>
+              <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fa fa-star-half-alt fill1"></i>
+             </div>
+           </div>
+
+           <div class="swiper-slide slider">
+            <div class="box">
+              <img src="images/i2.jpeg" alt=""height="300px "width="300px">
+              <h4>Franklin Clinton</h4>
+            
+              <div class="my-2">
+                <a  href="#" class="rang"><i class="fab fa-twitter fa-1x me-1"></i></a>
+                <a  href="#" class="rang"><i class="fab fa-linkedin fa-1x"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur.</p>
+             
+              <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fas fa-star fill1"></i>
+             <i class=" fa fa-star-half-alt fill1"></i>
+             </div>
+           </div>
+            
+      </div>
+
+      <div class="swiper-pagination pani pt-3"></div>
+    </div>
+ </div>
+
+</section>
+
+<!---------------------contact---------------------------->
+<section class="faq container py-5"  id="contact">
+  <div class="heading py-4"  data-aos="fade-up" >
+    <span>F</span>
+    <span>A</span>
+    <span>Q</span>
+    <span>s</span>
+    
+  </div>
+
+  <div class="container  pt-4" data-aos="fade-up">
+    <div class="row mx-auto">
+      <div class="col-md-6 my-auto">
+       
+        <div class="question-container ">
+          <div class="content-container">
+            <div class="faq-header">
+              <h5>How will my hotel booking or vacation packages be confirmed ?</h5>
+               <span class="open active">+</span>
+               <span class="close">-</span>
+
+            </div>
+            <div class="content ">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi iste quis voluptate debitis incidunt quisquam cupiditate quidem, molestiae temporibus!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="content-container">
+            <div class="faq-header">
+              <h5>What payment modes are accepted ?</h5>
+               <span class="open active">+</span>
+               <span class="close">-</span>
+
+            </div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="content-container">
+            <div class="faq-header">
+              <h5>Can I search Internationalflights on TravelGuys ?</h5>
+               <span class="open active">+</span>
+               <span class="close">-</span>
+
+            </div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos vitae ipsam voluptatem autem voluptatibus labore! </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 text-center my-auto" >
+        <img src="images/faqs.png" alt="" height="50%" width="50%"  >
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!------------------------footer------------------------->
+
+<footer class="foot">
+  <div class="container py-4">
+     
+   <div class="row mt-4 px-3 mx-auto ">
+     <div class="col-md-3 mb-2 mx-auto ">
+       <figure><img src="images/main.png" alt="" height="40%" width="40%"></figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+     </div>
+    
+  
+     <div class="col-md-3 mx-auto mb-2 ">
+           <h5>Useful Links</h5>
+           <div class="underline1 mb-4"></div>
+              
+           <p><a href="index.html" class="anc">Home</a></p>
+           <p><a href="book.html" class="anc">Book</a></p>
+           <p><a href="package.html" class="anc">Packages</a></p>
+           <p><a href="#gallery" class="anc">Gallery</a></p>
+           
+
+     </div>
+     
+     <div class="col-md-3 mb-2 cont">
+      <h5>Reach Us</h5>
+      <div class="underline1 mb-4"></div>
+      <h6><i class="far fa-envelope icon ">  </i> Email</h6>
+     <p>travelguys@gmail.com</p>
+      <h6><i class="fas fa-phone-alt icon "> </i> Call Us At</h6>
+      <p>+91 9865021867</p>
+     
+      
+    </div>
+    <div class="col-md-3 subs  mx-auto mb-2 ">
+       <h5>Subscribe </h5>
+       <div class="underline1 mb-4"></div>
+         <div class="d-flex">
+        <input type="text" class="form-control let " placeholder="Email Address" aria-label="First name"><button type="submit" class=" btn in btn-primary "><i class="fa fa-paper-plane"></i></button>
+       </div>
+       <h6 class="pt-3">Follow Us</h6>
+       <a href="#" class="so1">
+         <i class="fab fa-facebook-f p-2 text-center so2"></i>
+       </a>
+       <a href="#" class="so1 ">
+         <i class="fab fa-twitter p-2 so3"></i>
+       </a>
+       <a href="#" class="so1 ">
+         <i class="fab fa-google p-2 so4"></i>
+       </a>
+       <a href="#" class="so1  ">
+         <i class="fab fa-instagram text-center p-2 so5"></i>
+       </a>
+     
+ </div>
+
+
+
+   </div>
+  </div>
+
+  <div class="text-center p-3 sie">
+   Copyright © 2021 TheTravelGuy | Powered by Asper Team
+  </div>
+</footer>
+
+<script>
+ var loader = document.querySelector(".loader");
+ window.addEventListener("load", vanish);
+function vanish(){
+  loader.classList.add("disappear");
+}
+
+</script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+  var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay: {
+      delay:3500,
+      disableOnInteraction:false,
+    },
+    pagination: {
+          el: ".swiper-pagination",
+        },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  
+  },
+  });
+
+  btnScrollToTop = document.querySelector('#btnScrollToTop');
+
+    //window.scrollTo(0,0);
+     window.onscroll= function(){
+     scrollFunction()
+   };
+
+   function scrollFunction(){
+     if(document.body.scrollTop>1500 || document.documentElement.scrollTop){
+       btnScrollToTop.style.display="block";
+     }
+     else{
+       btnScrollToTop.style.display="none";
+     }
+   }
+   function topFunction(){
+    $('html','body').animate({scrollTop : 0}, 'slow');
+   }
+</script>
+
+<script>
+  document.querySelector('.switcher-btn').onclick=() =>{
+      document.querySelector('.color-switcher').classList.toggle('active');
+  };
+  </script>
+
+<script src="js/index.js"></script>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
