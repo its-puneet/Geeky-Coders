@@ -1,1 +1,91 @@
-/*👀*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.con {
+  width: 100vw;
+  height: 100vh;
+  background: #091921;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.clock {
+  background: url("https://drive.google.com/u/0/uc?id=1DBybco2DjKd4elgxZcJ8-zMRUF0ndIHW&export=download") no-repeat;
+  background-size: cover;
+  height: 70vmin;
+  width: 70vmin;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 -15px 15px #fff4,
+  inset 0 -15px 15px #fff4,
+  0 15px 15px #0004,
+  inset 0 -15px 15px #004;
+
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 5vmin;
+  width: 5vmin;
+  background: #fff;
+  border-radius: 50%;
+}
+#hour,#minute,#second {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  height: 50%;
+  width: 2vmin;
+  background: #fff;
+  transform: rotateZ(0deg) translatex(-50%);
+  transform-origin: 50% 100%;
+  border-radius:50px;
+  transition: 0ms;
+}
+#hour::after,#minute::after,#second::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background:#000;
+  border-radius: 20px;
+}
+#hour {
+  height: 30%;
+  animation-delay: 1s;
+}
+#minute {
+  height: 40%;
+}
+#second {
+  height: 45%;
+}
+
+
+
+
+/*Digital Clock*/
+.digital{
+  color:#0fb;
+  width:80vmin;
+  background:#0000;
+  display:block;
+  font-size:2em;
+  padding:5vmin 10vmin;
+  box-shadow:0 0 0px 0 red;
+  position:fixed;
+  bottom:20px;
+  text-align:center;
+}
+.digital *{
+  display:inline;
+  border:0px solid yellow;
+}
