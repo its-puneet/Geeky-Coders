@@ -1,0 +1,10 @@
+yolov4-tiny.cfg
+yolov4-tiny.weights
+new.py
+classes.txt
+1.txt
+1.py
+1.html
+dataimage
+dataimage/image14.png
+.gitignore
