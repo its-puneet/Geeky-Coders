@@ -14,6 +14,13 @@ function Navbar() {
         setTheme(theme === 'light' ? 'dark' : 'light')
         document.body.classList.toggle('dark')
     }
+    const clickHandler = (e) => {
+        const menu = document.querySelector('#menu-list')
+        menu.classList.toggle('hidden')
+        setOpen(!open)
+    }
+
+
     const toogleMenu = (e) => {
         const menu = document.querySelector('#menu-list')
         menu.classList.toggle('hidden')
@@ -33,13 +40,13 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="links dark:bg-bg-dark  lg:flex flex-row hidden" id="menu-list">
-                    <ul className='lg:flex lg:flex-row lg:justify-end lg:opacity-100 opacity-100 text-center flex-col   p-10 gap-6 sm:flex   lg:py-0  lg:pl-0 '>
-                        <li><a href="#" ><Link to={'/'} className="nav-list   hover:font-semibold " >Films</Link></a></li>
-                        <li><a href="#" ><Link to={'/people'} className="nav-list   hover:font-semibold ">People</Link></a></li>
-                        <li><a href="#" ><Link to={'/planets'} className="nav-list  hover:font-semibold   ">Planets</Link></a></li>
-                        <li><a href="#" ><Link to={'/species'} className="nav-list   hover:font-semibold " >Species</Link></a></li>
-                        <li><a href="#" ><Link to={'/vehicles'} className="nav-list  hover:font-semibold " >Vehicles</Link></a></li>
-                        <li><a href="#" ><Link to={'/developer'} className="nav-list   hover:font-semibold " >Developer</Link></a></li>
+                    <ul className='lg:flex lg:flex-row lg:justify-end lg:opacity-100 opacity-100 text-center flex-col   p-10 gap-6 sm:flex   lg:py-0  lg:pl-0 transition-all ease-linear'>
+                        <li onClick={clickHandler}><a href="#" ><Link to={'/'} className="nav-list   hover:font-semibold " >Films</Link></a></li>
+                        <li onClick={clickHandler}><a href="#" ><Link to={'/people'} className="nav-list   hover:font-semibold ">People</Link></a></li>
+                        <li onClick={clickHandler}><a href="#" ><Link to={'/planets'} className="nav-list  hover:font-semibold   ">Planets</Link></a></li>
+                        <li onClick={clickHandler}><a href="#" ><Link to={'/species'} className="nav-list   hover:font-semibold " >Species</Link></a></li>
+                        <li onClick={clickHandler}><a href="#" ><Link to={'/vehicles'} className="nav-list  hover:font-semibold " >Vehicles</Link></a></li>
+                        <li onClick={clickHandler}><a href="#" ><Link to={'/developer'} className="nav-list   hover:font-semibold " >Developer</Link></a></li>
                         {/* Light Switch  */}
                         <label className="switch " >
                             <input type="checkbox" />
