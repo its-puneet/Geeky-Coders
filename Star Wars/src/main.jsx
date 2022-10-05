@@ -6,7 +6,7 @@ import './index.css'
 
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-// import People from './pages/People'
+import People from './pages/People'
 // import Planets from './pages/Planets'
 // import Starships from './pages/Starships'
 // import Films from './pages/Films'
@@ -20,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <NavBar />
       <Routes>
         <Route exact path='/' element={<App />} />
+        <Route path='/people' element={<People />} />
       </Routes>
       <Footer />
     </React.StrictMode>
