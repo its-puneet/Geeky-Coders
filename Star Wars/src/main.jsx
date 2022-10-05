@@ -5,6 +5,7 @@ import App from './App'
 import './index.css'
 
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 // import People from './pages/People'
 // import Planets from './pages/Planets'
 // import Starships from './pages/Starships'
@@ -18,14 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <NavBar />
       <Routes>
-        <Route exact path='/' component={App} />
-        {/* <Route exact path='/people' component={People} />
-      <Route exact path='/planets' component={Planets} />
-      <Route exact path='/starships' component={Starships} />
-      <Route exact path='/films' component={Films} />
-      <Route exact path='/species' component={Species} />
-      <Route exact path='/vehicles' component={Vehicles} /> */}
+        <Route exact path='/' element={<App />} />
       </Routes>
+      <Footer />
     </React.StrictMode>
   </Router>
 )
