@@ -1,0 +1,25 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "Express backend for blog application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "express",
+    "mvc"
+  ],
+  "author": "Altaf Shaikh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.5"
+  },
+  "engines": {
+    "node": "10.19"
+  }
+}
