@@ -1,88 +1,86 @@
-                     :root {
-                        --googleblue: #4285F4;
-                        --googlered: #DB4437;
-                        --googleyellow: #F4B400;
-                        --googlegreen: #0F9D58;
-                        --googlegrey: #757575;
-                        --googlegreylight: #E0E0E0;
-                    }
-                    
-                    .switch {
-                        position: relative;
-                        margin-left: 25px;
-                        display: inline-block;
-                        width: 50px;
-                        height: 25px;
-                    }
-                    
-                    .switch input {
-                        opacity: 0;
-                        width: 0;
-                        height: 0;
-                    }
-                    
-                    .slider {
-                        position: absolute;
-                        cursor: pointer;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: var(--googlegreen);
-                        -webkit-transition: .4s;
-                        transition: .4s;
-                    }
-                    
-                    .slider:before {
-                        position: absolute;
-                        content: "";
-                        height: 17px;
-                        width: 17px;
-                        left: 3px;
-                        bottom: 2px;
-                        background-color: var(--googlegreylight);
-                        -webkit-transition: .4s;
-                        transition: .4s;
-                    }
-                    
-                    input:checked+.slider {
-                        background-color: black;
-                    }
-                    
-                    input:focus+.slider {
-                        box-shadow: 0 0 1px var(--googleblue);
-                    }
-                    
-                    input:checked+.slider:before {
-                        -webkit-transform: translateX(26px);
-                        -ms-transform: translateX(26px);
-                        transform: translateX(26px);
-                    }
-                    
-                    .slider.round {
-                        border-radius: 34px;
-                    }
-                    
-                    .slider.round:before {
-                        border-radius: 50%;
-                    }
-                    
-                    .nav-list {
-                        @apply text-ellipsis font-medium m-4;
-                    }
-                    
-                    .menu-options {
-                        font-size: larger;
-                    }
-                    
-                    .catonhold {
-                        height: 100%;
-                        width: auto;
-                        clip-path: polygon(0 15%, 89% 0, 100% 100%, 10% 100%);
-                    }
-                    
-                    #feature--section {
-                        background-image: url("./assets/night-sky-Milky-Way-Galaxy.jpg");
-                        clip-path: polygon(0 0, 100% 0, 100% 73%, 0 91%);
-                        background-blend-mode: hard-light;
-                    }
+                         :root {
+                            --googleblue: #4285F4;
+                            --googlered: #DB4437;
+                            --googleyellow: #F4B400;
+                            --googlegreen: #0F9D58;
+                            --googlegrey: #757575;
+                            --googlegreylight: #E0E0E0;
+                        }
+                        
+                        .switch {
+                            position: relative;
+                            margin-left: 25px;
+                            display: inline-block;
+                            width: 50px;
+                            height: 25px;
+                        }
+                        
+                        .switch input {
+                            opacity: 0;
+                            width: 0;
+                            height: 0;
+                        }
+                        
+                        .slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: var(--googlegreen);
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                        }
+                        
+                        .slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 17px;
+                            width: 17px;
+                            left: 3px;
+                            bottom: 2px;
+                            background-color: var(--googlegreylight);
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                        }
+                        
+                        input:checked+.slider {
+                            background-color: black;
+                        }
+                        
+                        input:focus+.slider {
+                            box-shadow: 0 0 1px var(--googleblue);
+                        }
+                        
+                        input:checked+.slider:before {
+                            -webkit-transform: translateX(26px);
+                            -ms-transform: translateX(26px);
+                            transform: translateX(26px);
+                        }
+                        
+                        .slider.round {
+                            border-radius: 34px;
+                        }
+                        
+                        .slider.round:before {
+                            border-radius: 50%;
+                        }
+                        
+                        .nav-list {
+                            @apply text-ellipsis font-medium m-4;
+                        }
+                        
+                        .menu-options {
+                            font-size: larger;
+                        }
+                        
+                        .catonhold {
+                            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+                        }
+                        
+                        #feature--section {
+                            background-image: url("./assets/night-sky-Milky-Way-Galaxy.jpg");
+                            clip-path: polygon(0 0, 100% 0, 100% 73%, 0 91%);
+                            background-blend-mode: hard-light;
+                        }

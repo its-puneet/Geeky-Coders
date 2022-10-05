@@ -19,12 +19,12 @@ function App() {
 
   return (
     <>
-      <div className='bg-gray-800 py-36'>
-        <div className='container mx-auto px-10 h-96 flex justify-between flex-row'>
-          <div className='p-10'>
-            <h1 className='text-white text-5xl'>Star Wars ☄️</h1>
+      <div className='dark:bg-gray-800'>
+        <div className='container mx-auto px-10  flex justify-between flex-row'>
+          <div className='p-10 py-36'>
+            <h1 className='text-black dark:text-white  text-5xl'>Star Wars ☄️</h1>
             <br />
-            <p className='text-clip text-white text-lg'>The Star Wars API is the world's first quantified and programmatically-formatted set of Star Wars data.
+            <p className='text-clip text-black dark:text-white text-lg'>The Star Wars API is the world's first quantified and programmatically-formatted set of Star Wars data.
               After hours of watching films and trawling through content online, we present to you all the People, Films, Species, Starships, Vehicles and Planets from Star Wars.
               We've formatted this data in JSON and exposed it to you in a RESTish implementation that allows you to programmatically collect and measure the data.
               Check out the documentation to get started consuming swapi data.</p>
@@ -34,8 +34,8 @@ function App() {
             </div>
 
           </div>
-          <div className='h-full w-full '>
-            <img src={CatOnHold} alt="catfighting" className='catonhold' />
+          <div className='w-full flex items-center'>
+            <img src={CatOnHold} alt="catfighting" className=' catonhold h-fit w-full' />
 
           </div>
 
@@ -43,7 +43,7 @@ function App() {
 
         {/* // features section */}
 
-        <div className=' h-[1080px] relative '>
+        <div className=' h-[900px] relative '>
           <div id="feature--section" className='h-96 '></div>
           <div className='absolute top-0 right-1/1 px-20'>
             <h1 className='text-center text-5xl text-white pt-10'>Collector</h1>
@@ -89,9 +89,9 @@ function App() {
         {/* // features section */}
 
         <div>
-          <div id="about--section" className='h-96 '>
-            <h1 className='text-center text-5xl text-white pt-10'>About</h1>
-            <p className='text-center text-xl text-white '>Cats Love Rage 😭</p>
+          <div id="about--section" className='p-10'>
+            <h1 className='text-center text-5xl text-black dark:text-white pt-10'>About</h1>
+            <p className='text-center text-xl text-black dark:text-white '>Cats Love Rage 😭</p>
             <div className='rounded-xl justify-center flex'>
               <img src={CatFighting} alt="catfighting" className='rounded-xl shadow-lg shadow-slate-400 h-80' />
             </div>
