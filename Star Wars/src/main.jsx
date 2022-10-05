@@ -7,11 +7,9 @@ import './index.css'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import People from './pages/People'
-// import Planets from './pages/Planets'
-// import Starships from './pages/Starships'
-// import Films from './pages/Films'
-// import Species from './pages/Species'
-// import Vehicles from './pages/Vehicles'
+import Species from './pages/Species'
+import Vehicle from './pages/Vehicles'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route exact path='/' element={<App />} />
         <Route path='/people' element={<People />} />
+        <Route path='/species' element={<Species />} />
+        <Route path='/vehicles' element={<Vehicle />} />
       </Routes>
       <Footer />
     </React.StrictMode>
