@@ -1,0 +1,62 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+class Options{
+    protected:
+        int n,elem,i;
+        vector<int> vec;
+
+    public:
+       void options(){
+            cout<<endl<<"Choose an option "<<endl;
+            cout<<"1. Add an element. "<<endl;
+            cout<<"2. Delete an element. "<<endl;
+            cout<<"3. Return stack. "<<endl;
+            cout<<"4. Exit. "<<endl;
+            cin>>n;
+
+    }
+};
+class Working :public Options{
+    public:
+        void work();
+
+        
+        void one(){
+            cout<<"enter element to add :"<<endl;
+            cin>>elem;
+            vec.push_back(elem);
+        }
+        void two(){
+            if (vec.size()==0)cout<<"stack is empty. "<<endl;
+            else vec.pop_back();
+        }
+        void three ();
+        
+
+};
+void Working :: three(){
+    cout<<endl<<endl;
+    for (i=0;i<vec.size();i++){
+        cout<<vec[i]<<" ";
+    }
+    cout<<endl<<endl<<endl;
+
+}
+void Working:: work(){
+    n=6;
+    while(n!=4){
+        options();
+        if (n==1)one();
+        else if (n==2)two();
+        else if (n==3)three();
+        else if (n==4)break;
+        else cout<<"enter valid option. "<<endl;
+    }
+}
+int main(){
+    Working obj;
+    obj.work();
+    return 0;
+}
+
