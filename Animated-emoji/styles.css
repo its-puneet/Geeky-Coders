@@ -1,0 +1,123 @@
+* {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style: none;
+}
+body {
+    background-color: #caf0f8;
+    width: 100%; height: 100%;
+}
+
+#stuff {
+    position: absolute;
+    animation:oscillate 1s infinite alternate;
+    -moz-animation:oscillate 10s infinite alternate; /* Firefox */
+    -webkit-animation:oscillate 10s infinite alternate; /* Safari and Chrome */
+    -o-animation:oscillate 10s infinite alternate; /* Opera */
+}
+
+@keyframes oscillate
+{
+0%   {top:10%; left:10%;}
+25%  {top:15%; left:30%;}
+50%  {top:5%; left:20%;}
+75%  {top:55%; left:60%;}
+85%  {top:75%; left:40%;}
+100% {top:10%; left:10%;}
+}
+
+#face {
+    position: absolute;
+   width:200px; 
+   height:170px;
+    background: #fff;
+background: linear-gradient(45deg,  #fff 0%,blue 100%);
+   border-radius:52% 50% 50% 50%;
+    z-index: 1000;
+    margin: 50px 180px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    box-shadow: 0px 2px 8px #647696;
+}
+
+#face ul {
+    position: absolute;
+}
+
+
+#right-eye:before {
+    position: absolute;
+    content : "";
+    width: 40px;
+    height: 40px;
+    background-color:#fff;
+    border-radius: 50px;
+    top: 45px; left: 40px;
+    z-index: 1900;
+    border: 2px solid aquamarine;
+}
+
+#left-eye:after {
+    position: absolute;
+    content : "";
+    width: 35px;
+    height: 35px;
+    background-color:#fff;
+    border-radius: 25px;
+    top: 47px; left: 122px;
+    z-index: 1900;
+    border: 3px solid aquamarine;
+}
+
+#eye-shine {
+    position: relative;
+    font-family: "Arial";
+    font-size: 20px;
+    color: #ccc;
+    top: 65px; left: 55px;
+    z-index:2001;
+    letter-spacing: 35px;
+}
+
+#face li:nth-child(3):before {
+    position: absolute;
+    content : "";
+    width: 6px;
+    height: 6px;
+    background-color:#000;
+    border-radius: 10px;
+    top: 12px; left: 0px;
+    z-index: 1900;
+    border: 3px solid #000;
+    z-index: -1;
+}
+#face li:nth-child(3):after {
+    position: absolute;
+    content : "";
+    width: 4px;
+    height: 4px;
+    background-color:#000;
+    border-radius: 10px;
+    top: 12px; left: 77px;
+    z-index: 1900;
+    border: 3px solid #000;
+    z-index: -1;
+} 
+
+#mouth {
+    position: absolute;
+    background-color: #fbba2a;
+    width: 60px; height: 3px;
+    border-radius:50px 50px;
+    border: 3px solid #000;
+    top: 104px; left: 75px;
+    z-index: 3051;
+}
+
+
+
+
+
+
