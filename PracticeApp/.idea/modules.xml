@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PracticeApp.iml" filepath="$PROJECT_DIR$/.idea/modules/PracticeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PracticeApp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.iml" filepath="$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/computation/PracticeApp.computation.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.iml" filepath="$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.main.iml" filepath="$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/configDep/PracticeApp.configDep.unitTest.iml" />
+    </modules>
+  </component>
+</project>
