@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <script>
+        window.addEventListener('load', callServer);
+        function callServer(){
+           let searchBoxVal =  document.querySelector('#searchbox').value ;
+           if(searchBoxVal.length==0){
+            searchBoxVal = "Iron Man";
+           }   
+           const URL =`https://api.giphy.com/v1/gifs/search?api_key=[remove these sqaure brackets and insert API Key here]&q=${searchBoxVal}&limit=10&offset=0&rating=pg-13&lang=en`  
+                const promise = fetch(URL); // Async (Non Blocking)
+                promise.then(response=>{
+                    response.json().then(result=>{
+                        console.log('Data is ', result.data);
+                        document.querySelector('#root').innerHTML = '';
+                        result.data.forEach(obj=>{
+                            createImage(obj.images.original.url);
+                        })
+                    }).catch(err=>{
+                        console.log('Invalid JSON ', err);
+                    })
+                }).catch(err=>{
+                    console.log('Network Issue or Server issue ', err);
+                });
+                console.log('Code ......');
+            }
+            function createImage(url){
+                const img = document.createElement('img');
+                img.src = url;
+                document.querySelector('#root').appendChild(img);
+               
+            }
+    </script>
+</head>
+<body>
+    <input id="searchbox" type="text" placeholder="Type to Search">
+    <button onclick="callServer()">SearchBox</button>
+    <div id="root">
+
+    </div>
+</body>
+</html>
