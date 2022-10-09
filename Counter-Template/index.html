@@ -17,18 +17,60 @@
 		<div>
 			<img src="1.png">
 			<h1>Marketing</h1>
-			<h2>25+</h2>
+			<h2 id="num1" count="25"></h2>
 		</div>
 		<div>
 			<img src="2.png">
 			<h1>Development</h1>
-			<h2>19+</h2>
+			<h2 id="num2" count="19"></h2>
 		</div>
 		<div>
 			<img src="3.png">
 			<h1>Garphics</h1>
-			<h2>14+</h2>
+			<h2 id="num3" count="14"></h2>
 		</div>
 	</section>
+
+	<script>
+		function animate() {
+            var num1 = document.getElementById('num1');
+            var val1 = num1.getAttribute("count");
+            var count1 = 0;
+
+            function ani1() {
+                if (count1 <= val1) {
+                    num1.innerHTML = count1++ + "+";
+                }
+            }
+
+            setInterval(ani1, 30);
+
+            var num2 = document.getElementById('num2');
+            var val2 = num2.getAttribute("count");
+            var count2 = 0;
+
+            function ani2() {
+                if (count2 <= val2) {
+                    num2.innerHTML = count2++ + "+";
+                }
+            }
+
+            setInterval(ani2, 30);
+
+            var num3 = document.getElementById('num3');
+            var val3 = num3.getAttribute("count");
+            var count3 = 0;
+
+            function ani3() {
+                if (count3 <= val3) {
+                    num3.innerHTML = count3++ + "+";
+                }
+            }
+
+            setInterval(ani3, 30);
+        }
+
+        animate();
+	</script>
 </body>
 </html>
