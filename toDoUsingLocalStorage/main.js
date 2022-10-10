@@ -1,6 +1,10 @@
 if(window.localStorage.getItem("id") == undefined){
 	window.localStorage.setItem("id", 1);
 }
+// make id always less than 100, provided id 1 is deleted
+if(window.localStorage.getItem("id") == 98){
+	window.localStorage.setItem("id", 1);
+}
 function loader(){
 	for(i=1; i<100; i++){
 		if(window.localStorage.getItem("task" + i) == undefined){
