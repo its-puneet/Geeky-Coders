@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cars Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="js/cars.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/jaws.js"></script>
+    <script src="js/jaws-sprite_list.js"></script>
+    <script src="js/jaws-tile_map.js"></script>
+    <script src="js/manageChat.js"></script>
+    <script src="js/parseJsonFile.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/tileset.js"></script>
+    <script src="js/smartphone-controls.js"></script>
+    <script src="public/constants.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>NodeRace</h1>
+    </header>
+    <div class="row">
+        <div id="colonne1" class="col-sm-3">
+            <h3>Chat Room</h3>
+            <hr>
+            <div>
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <label for="message" class="control-label col-sm-3">Message:</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="user" id="message" placeholder="votre message">
+                      <input class="btn btn-default" type="submit" value="Submit" id="submitChatMessage" disabled>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div id="oldMessages"></div>
+                     </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div id="listMessage"></div>
+                    </div>
+                </div>
+            </div>
+            </br>
+        </div>
+        <div id="centre" class="col-sm-9">
+            <div class="well">
+                <form  role="form" action="/" method="post" id="formulaire">
+                    <div class="form-group row">
+                        <label for="login" class="control-label col-sm-2 text-left" >Login:</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="user" id="login" autocomplete="on" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cars" class="control-label col-sm-2" >Car:</label>
+                        <div class="col-sm-10">
+                            <select id="cars"></select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="private" class="control-label col-sm-2">Private game</label>
+                        <div class="col-sm-10">
+                            <input type="Checkbox" id="private" name="private" value="false">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="control-label col-sm-2" >Password:</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="user" id="password" autocomplete="on">
+                        </div>
+                    </div>
+                    <fieldset>
+                        <div class="form-group row">
+                            <label for="host" class="control-label col-sm-2">Host</label>
+                            <div class="col-sm-10">
+                                <input type="Checkbox" id="host" name="host" value="false" onclick="handleClick(this);">
+                            </div>
+                        </div>
+                        <div id="hostOptions">
+                            <div class="form-group row">
+                                <label for="track" class="control-label col-sm-2">Track:</label>
+                                <div class="col-sm-10">
+                                    <select id="track"></select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="laps" class="control-label col-sm-2">Laps</label>
+                                <div class="col-sm-10">
+                                    <input type="number" id="laps" value="2" max="16" min="2" step="1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="minCar" class="control-label col-sm-2">Number of players</label>
+                                <div class="col-sm-10">
+                                    <input type="number" id="minCar" value="2" max="8" min="2" step="1">
+                                </div>
+                            </div>
+                        </div>
+                        </br>
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input class="btn btn-default" type="submit" value="Play !" id="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </br>
+            <div id="info"></div>
+            <canvas id="gameCanvas" width="800" height="500">
+                Your browser is not compatible !
+            </canvas>
+            </br>
+            <div id="speed">
+            </div>
+            <div id="live_info"></div>
+            <div id="debug"> </div>
+            <h3>jaws log</h3>
+            <div id="jaws-log"></div>
+        </div>
+      </div>
+    </br>
+    <footer>
+        A game developed by Adrien Jarretier and Gomez Guillaume.
+    </footer>
+    <!-- Chargement du jeu -->
+    <script>
+    username = "";
+    trackName = "";
+    carName = "";
+
+    function handleClick(cb) {
+        $("#hostOptions").toggle(cb.checked);
+        if (cb.checked) {
+            document.getElementById('hostOptions').style.visibility = 'visible';
+
+        } else {
+            document.getElementById('hostOptions').style.visibility = 'hidden';
+        }
+
+    }
+
+    var game;
+    window.onload = function() {
+        jaws.unpack();
+        jaws.assets.root = "assets/";
+
+        var arrayTileInfo = [];
+        ParseJsonFile.getTileInfo(function(arrayTileInfo) {
+
+            for (var i = 0; i < arrayTileInfo.length; i++) {
+                jaws.assets.add(arrayTileInfo[i].url);
+            };
+
+        });
+        ParseJsonFile.createCarsSelectionMenu("cars");
+        ParseJsonFile.createTracksSelectionMenu("track");
+        $("#hostOptions").hide();
+
+        jaws.mobileVersion = false;
+        if(window.mobileAndTabletcheck()) {
+            jaws.mobileVersion = true;
+            startup();
+        }
+    }
+
+    </script>
+    <!-- la partie websocket qui permet la communication avec node.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    var socket = io();
+    jaws.constants = new Constants();
+    // by default connect to the host that served this page
+
+    var cars = [];
+
+    socket.on(jaws.constants.login, function(loginInfos) {
+
+        cars[loginInfos.id] = loginInfos.carName;
+
+        game.addCar(loginInfos.id, loginInfos.carName);
+
+        //display that a new player is connected
+        var message = $('#info').html("<p><i>" + loginInfos.username + "</i> is just connected</p>");
+
+    });
+
+    socket.on(jaws.constants.instanceNotFound, function() {
+        BootstrapDialog.alert({
+            type: BootstrapDialog.TYPE_WARNING,
+            message: 'no game found'
+        });
+    });
+
+    socket.on(jaws.constants.id, function(id) {
+        username = $('#login').val();
+        // window.location += '#gameCanvas';
+        if (window.location.search == '') {
+            window.location = 'game.html#gameCanvas';
+        }
+
+        //on lance le jeu quand on a recuperer l'id de connexion
+        game = new Game(socket, id, trackName, cars);
+        jaws.start(game);
+    });
+
+    socket.on(jaws.constants.infoPart, function(infos) {
+        laps = infos.laps;
+        nbCarsPlayed = infos.nbComponents;
+        trackName = infos.track;
+        cars = infos.selectedCarNames;
+    });
+
+    // Lorsqu'on envoie le formulaire, on transmet le message et on l'affiche sur la page
+    $('#formulaire').submit(function() {
+        var log = $('#login').val();
+        var passwd = $('#password').val();
+        var minCar = $('#minCar').val();
+        var maxCar = $('#maxCar').val();
+        var isHost = ($('#host').is(":checked"));
+        var isPrivate = ($('#private').is(":checked"));
+        var lap = $('#laps').val();
+        carName = $('#cars').val();
+        trackName = $('#track').val();
+
+        var emptyPattern = /[a-z]/i;
+        var valid = true;
+
+        if (!emptyPattern.test(log)) {
+            BootstrapDialog.alert({
+                type: BootstrapDialog.TYPE_PRIMARY,
+                message: "Please set the login"
+            });
+            valid = false;
+        }
+
+        if(!emptyPattern.test(carName)) {
+            BootstrapDialog.alert({
+                type: BootstrapDialog.TYPE_PRIMARY,
+                message: "Please select a car"
+            })
+            valid = false;
+        }
+
+        if(valid) {
+
+            var message = {
+                car: carName,
+                login: log,
+                minCar: minCar,
+                maxCar: maxCar,
+                host: isHost,
+                private: isPrivate,
+                password: passwd,
+                laps: lap,
+                track: trackName
+            };
+            socket.emit(jaws.constants.login, message);
+            $("#submitChatMessage").prop( "disabled", false );
+            manageChat(socket);
+            console.log(window.location);
+
+        }
+        return false; // Permet de bloquer l'envoi "classique" du formulaire
+    });
+
+    socket.on(jaws.constants.startGame, function() {
+        var demarre = true;
+        console.log("The game is starting");
+    });
+
+    socket.on(jaws.constants.instanceDisconnection, function(message) {
+        BootstrapDialog.alert(message);
+    });
+
+    socket.on(jaws.constants.isExist, function() {
+        BootstrapDialog.alert({
+            type: BootstrapDialog.TYPE_WARNING,
+            message:'There is already an ongoing game with this password'
+        });
+    });
+
+    socket.on(jaws.constants.hostIsLeaving, function() {
+        BootstrapDialog.alert({
+            type: BootstrapDialog.TYPE_DANGER,
+            message: "Game is over, host has leaving the game. Refresh the page"
+        });
+    })
+
+    $(window).unload(function() {
+        BootstrapDialog.alert({
+            type: BootstrapDialog.TYPE_DANGER,
+            message: "Handler for .unload() called."
+        });
+        socket.emit(jaws.constants.disconnection, 'disconnection');
+    });
+
+    </script>
+</body>
+
+</html>

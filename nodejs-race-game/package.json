@@ -1,0 +1,34 @@
+{
+  "name": "metacall-nodejs-race-game-example",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "~3.3.4",
+    "socket.io": "~1.0.0",
+    "uuid": "^2.0.2"
+  },
+  "author": "Guillaume Gomez <guillaume.gomez@email.com>, Jarretier Adrien <jarretier.adrien@gmail.com>",
+  "description": "A Network video game to learn basic NodeJs Skills and socket.io",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metacall/nodejs-race-game-example.git"
+  },
+  "keywords": [
+    "2d",
+    "car",
+    "game",
+    "html5",
+    "jawsjs",
+    "race",
+    "socket"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metacall/nodejs-race-game-example/issues"
+  },
+  "homepage": "https://github.com/metacall/nodejs-race-game-example#readme"
+}

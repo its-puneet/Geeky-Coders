@@ -1,0 +1,141 @@
+﻿body {
+    text-align: center;
+    color: white;
+    background: url('fond.png');
+    opacity: 0.9;
+    font-family: 'Jura', sans-serif, Arial, serif;
+}
+
+canvas {
+    background: url('fond-bleu.jpg');
+    box-shadow: 10px 10px 12px #000;
+}
+
+#debug {
+    border: 1px solid red;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#group {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.choice {
+    border: 1px solid #cccccc;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    opacity: 0.7;
+}
+
+.choice:hover {
+    border: 1px solid #584e52;
+    background-color: #e0e0e0;
+    opacity: 0.8;
+    box-shadow: 1px 1px 1px grey;
+}
+
+#commands {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+fieldset {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+    color: white;
+}
+
+.keyword {
+    background-color: #b2b2b2;
+    width: 200px;
+    height: 50px;
+}
+
+td {
+    background: url('impaire.png') repeat-x;
+    color: white;
+}
+
+button {
+    border-top: 1px solid #afbfc9;
+    background: #c5d2db;
+    background: -webkit-gradient(linear, left top, left bottom, from(#63686b), to(#c5d2db));
+    background: -webkit-linear-gradient(top, #63686b, #c5d2db);
+    background: -moz-linear-gradient(top, #63686b, #c5d2db);
+    background: -ms-linear-gradient(top, #63686b, #c5d2db);
+    background: -o-linear-gradient(top, #63686b, #c5d2db);
+    padding: 9px 18px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 17px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 300px;
+}
+
+button:hover {
+    border-top-color: #aab1b5;
+    background: #aab1b5;
+    color: #ffffff;
+}
+
+button:active {
+    border-top-color: #4f5254;
+    background: #4f5254;
+}
+
+fieldset {
+    background-color: black;
+}
+
+.myButton {
+    -moz-box-shadow: inset 0px 1px 0px 0px #664441;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #664441;
+    box-shadow: inset 0px 1px 0px 0px #664441;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #918988), color-stop(1, #3d3d3d));
+    background: -moz-linear-gradient( center top, #918988 5%, #3d3d3d 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#918988', endColorstr='#3d3d3d');
+    background-color: #918988;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #3b1d1a;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #571f1b;
+}
+
+.myButton:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d3d3d), color-stop(1, #918988));
+    background: -moz-linear-gradient( center top, #3d3d3d 5%, #918988 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#918988');
+    background-color: #3d3d3d;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}

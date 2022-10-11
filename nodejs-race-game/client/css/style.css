@@ -1,0 +1,63 @@
+a {
+    text-decoration: none;
+}
+
+p {
+    max-width:300px;
+    word-wrap:break-word;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+legend {
+    text-align: center;
+}
+
+#colonne1 h3 {
+    text-align: center;
+}
+
+canvas {
+    background-color: black;
+    border: 2px solid #d3d3d3;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    color: inherit;
+}
+
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #eaeaea url('bg.png');
+    color: #4d4d4d;
+    margin: 0 auto;
+}
+
+#log {
+    color: #3BD11D;
+}
+
+#newLog {
+    font-style: italic;
+}
+
+#hostOptions {
+    visibility: hidden;
+}
