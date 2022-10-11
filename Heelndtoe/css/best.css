@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(221, 84, 29);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*Scroll-bar*/
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFFCFB;
+    border-radius: 30px;
+    outline: 1px solid #FFFCFB;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(221, 84, 29);
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: rgb(221, 84, 29);
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    margin-top: 0;
+    z-index: 1;
+    background-color: rgb(221, 84, 29)
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: rgb(221, 84, 29);
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: rgb(221, 84, 29);
+}
+
+nav.black ul li a {
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+nav.black .logo {
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 20px;
+}
+
+nav ul li a {
+    position: relative;
+}
+nav.black ul li a.best{
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px; 
+  }
+
+nav ul li a,
+.list-unstyled li a {
+    text-decoration: none;
+    color: rgb(221, 84, 29);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* for menu icon */
+
+.menu-icon {
+    background: rgb(221, 84, 29);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 2px 0 7px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.bar-icon{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    cursor: pointer;
+}
+.bar{
+    width: 35px;
+    height: 6px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    width: 0%;
+    background: white;
+    height: 7%;
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover:before {
+    width: 100%;
+    left: 0;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+.shadow {
+    box-shadow: 0 0 12px 0px #333333c7;
+}
+
+
+/* Carousel */
+
+.carousel-caption{
+    border: 3px solid white;
+    border-radius: 1%;
+    background-color: rgba(214, 214, 214, 0.719);
+}
+
+.carousel-text{
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.carousel-caption p{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.items{
+    color: rgb(255, 211, 130);
+    border: 3px solid rgba(1, 122, 1, 0.616);
+    background-color: rgba(51, 51, 51, 0);
+}
+
+
+.container-fluid {
+
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: medium;
+}
+
+.carousel-item>img{
+   height: 600px;
+   margin: auto; 
+   padding: auto;
+}
+
+/* Card for best category */
+.best-seller-card{
+    border: 2px black solid;
+    transition: 0.5s ease-in-out;
+}
+.best-seller-card:hover{
+    transform: translate(20px);
+    transition: 0.5s ease-in-out;
+}
+
+/* for responsive navbar */
+
+@media (max-width: 786px){
+    nav ul {
+        max-height: 0px;
+        background: rgb(221, 84, 29);
+        padding: 65px 0 10px;
+    }
+
+    nav.black ul {
+        background: rgb(221, 84, 29);
+    }
+    .showing {
+        max-height: 100vh;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .btn-success{
+        margin-bottom: 10px;
+        margin-right: 2px;
+    }
+}
+@media (max-width: 1220px) and (min-width: 787px){
+    nav ul{
+        width: 80%;
+        float: right;
+    }
+    nav ul li{
+        text-align: right;
+    }
+    body{
+        padding-top: 100px; 
+    }
+    .btn-success{
+        margin-right: 3px;
+    }
+}
+

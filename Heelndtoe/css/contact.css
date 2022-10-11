@@ -1,0 +1,218 @@
+    .new {
+        padding-top: 100px;
+    }
+    nav ul li a {
+        position: relative;
+    }
+    nav.black ul li a.contact{
+        color: white;
+        border-bottom: 2px solid white;
+        padding-bottom: 10px; 
+      }
+    nav ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: -40%;
+        left: 50%;
+        width: 0%;
+        background: white;
+        height: 7%;
+        transition: all 0.2s ease;
+    }
+    nav ul li a:hover:before {
+        width: 100%;
+        left: 0;
+    }
+    nav.black ul li a:hover{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media (max-width:1048px) {
+        .new{
+            padding-top: 163px;
+        }
+        
+    }
+    .menu-icon {
+        background: rgb(221, 84, 29);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 80px;
+        /* box-shadow: 2px 0 7px rgba(0, 0, 0, 0.3); */
+        display: none;
+    }
+    .bar-icon{
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        cursor: pointer;
+    }
+    .bar{
+        width: 35px;
+        height: 6px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    @media (max-width: 1184px) {
+        .wrapper {
+            background-image: url('../images/bgshoes1.png');
+            background-size: cover;
+            height: 780px;
+        }
+        .logo {
+            position: relative;
+            top: 14px;
+            margin-top: auto;
+            color: white;
+        }
+        .menu {
+            width: 100%;
+            background-color: rgb(221, 84, 29);
+        }
+        nav ul {
+            position: absolute;
+            right: 0;
+        }
+
+        nav.black ul {
+            background: rgb(221, 84, 29);
+            width: 100%;
+        }
+
+        nav ul li {
+            box-sizing: border-box;
+            width: auto;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+        nav ul li a {
+            color: white;
+        }
+        nav ul li a:hover {
+            color: white;
+            border-bottom: 2px solid white;
+            padding-bottom: 0px;
+        }
+    }
+
+    /* style for form*/
+    .new{
+        background-color: white;
+        padding-bottom: 2rem;
+    } 
+    .container{
+        border: 2px solid rgb(221, 84, 29);
+        background-color: white;
+    }
+    .container-fill{
+        border: 2px solid rgb(221, 84, 29);
+        background-color: #dc541d;
+        width: 60%;
+        margin: auto;
+    }
+    .contactform{
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    label{
+        color: rgb(221, 84, 29);
+    }
+
+    ::placeholder, select{
+        color: black;
+    }
+
+    input[type="text"], select, textarea{
+        border: 1px solid rgb(221, 84, 29);
+    }
+
+    #submit{
+        background-color: white;
+        border: 1px solid rgb(221, 84, 29);
+        color: rgb(221, 84, 29);
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #submit:hover{
+        background-color: rgb(221, 84, 29);;
+        color: white;
+    }
+
+    .form-container{
+        background-color: white;
+    }
+
+
+
+
+    /*media*/
+
+    @media (max-width: 1155px){
+        nav ul li {
+            padding: 16px 1.7%;
+        }
+        nav ul{
+            padding-right: 20px;
+            width: 80%;
+            float: right;
+        }
+    }
+    @media (max-width: 950px){
+        nav ul li {
+            padding: 16px 1.7%;
+        }
+        nav ul{
+            padding-right: 20px;
+            width: 77%;
+        }
+    }
+    @media (max-width: 900px){
+        nav ul {
+            max-height: 0px;
+            background: rgb(221, 84, 29);
+            /* padding-top: 65px; */
+            width: 100%;
+            top: 80px;
+            /* padding-bottom: 10px; */
+        }
+        nav.black ul{
+            box-shadow: none;
+        }
+        nav.black ul {
+            background: rgb(221, 84, 29);
+        }
+        .showing {
+            max-height: 100vh;
+        }
+        nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .menu-icon{
+            display: block;
+        }
+    }
+
+    /* @media screen and (max-width: 1000px){
+        body {
+            font-size: 200%;
+        }
+    } */
