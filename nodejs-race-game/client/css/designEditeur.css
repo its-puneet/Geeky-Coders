@@ -1,0 +1,140 @@
+body {
+    text-align: center;
+    color: white;
+    background: black;
+    font-family: 'Jura', sans-serif, Arial, serif;
+}
+
+div#live_info {
+    color: black;
+}
+
+div#colonne2 {
+    border-radius: 10px 5px 5px 0px;
+    float: right;
+    width: 22%;
+    margin-left: 10px;
+    color: black;
+    background: url('colonne2.png') no-repeat;
+    background-color: #e7eeee;
+}
+
+div#centre {
+    border-radius: 5px 5px 15px 15px;
+    overflow: hidden;
+    background: url('bg.png');
+}
+
+div#tabIA {
+    width: 300px;
+}
+
+#EditorCanvas {
+    margin-top: 10px;
+    background: white;
+    box-shadow: 10px 10px 12px #000;
+}
+
+#current-image {
+    position: relative;
+    background-image: url(button.png);
+    padding: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+#fieldCurrent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: 10px outset #c0c0c0;
+    background-color: black;
+}
+
+#current-image-souris {
+    position: absolute;
+    display: block;
+    z-index: 5;
+}
+
+input#paire {
+    witdh: 15px;
+}
+
+.keyword {
+    background: url('impaire.png');
+    width: 175px;
+    height: 50px;
+    color: #717171;
+}
+
+.myButton {
+    -moz-box-shadow: inset 0px 1px 0px 0px #664441;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #664441;
+    box-shadow: inset 0px 1px 0px 0px #664441;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #918988), color-stop(1, #3d3d3d));
+    background: -moz-linear-gradient( center top, #918988 5%, #3d3d3d 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#918988', endColorstr='#3d3d3d');
+    background-color: #918988;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #3b1d1a;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #571f1b;
+}
+
+.myButton:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d3d3d), color-stop(1, #918988));
+    background: -moz-linear-gradient( center top, #3d3d3d 5%, #918988 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#918988');
+    background-color: #3d3d3d;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+#bordure {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: 10px outset #c0c0c0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+legend {
+    text-align: auto;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text] {
+    width: 75%;
+}
+
+input[type=number] {
+    width: 75%;
+}

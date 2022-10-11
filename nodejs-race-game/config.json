@@ -1,0 +1,6 @@
+{
+    "port": 51510,
+    "tracksDirectory": "tracks",
+    "tracksList": "tracks/list.json",
+    "carsList": "client/assets/cars/list.json"
+}

@@ -1,0 +1,11 @@
+﻿body {
+    text-align: center;
+    color: white;
+    font-family: 'Jura', sans-serif, Arial, serif;
+    background: black;
+}
+
+canvas {
+    background: url('fond-bleu.jpg');
+    box-shadow: 10px 10px 12px #000;
+}

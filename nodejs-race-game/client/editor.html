@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Editor</title>
+    <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/designEditeur.css" type="text/css" media="screen">
+    <script src="js/editor.js"></script>
+    <script src="js/jaws.js"></script>
+    <script src="js/jaws-tile_map.js"></script>
+    <script src="js/jaws-sprite_list.js"></script>
+    <script src="js/makeLevel.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/editor-tool.js"></script>
+    <script src="js/tileset.js"></script>
+    <script src="js/parseJsonFile.js"></script>
+</head>
+<div id="colonne2">
+    <legend>SpriteSheet</legend>
+    <hr>
+    <div id="liste-image">
+    </div>
+    </br>
+</div>
+<div id="centre">
+    <canvas id="EditorCanvas" width="1000" height="500">
+        Your browser is not compatible !
+    </canvas>
+    <div id="debug"></div>
+    <div id="live_info"></div>
+    </br>
+    <!-- Place this tag where you want the +1 button to render. -->
+    <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+    <!-- Place this tag after the last +1 button tag. -->
+    <script type="text/javascript">
+    window.___gcfg = {
+        lang: 'fr'
+    };
+
+    (function() {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+
+    </script>
+    </br>
+    <fieldset id="bordure" class="separation">
+        <table cellspacing="50px">
+            <tr>
+                <td>
+                    <label name="scale" title="scale selected sprite">Scale</label>
+                    <input id="scale" type="number" step="0.1" min="0.1" max="3.0" name="scale" size="2" value="1" onchange="" />
+                </td>
+                <td>
+                    <label name="rotate" title="rotate selected sprite">Rotate</label>
+                    <input id="rotate" type="number" step="90" min="0" max="360" name="scale" value="0" onchange="m_level.updateRotationTiles()" />
+                </td>
+                <td>
+                    <button type="button" onclick="m_level.save()" class="myButton">Save</button>
+                </td>
+                <td>
+                    Display the grid :
+                    <input type="checkbox" checked id="grid">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset id="fieldCurrent">
+        <legend>Current sprite : </legend>
+        <canvas id="current-image" width=150></canvas>
+    </fieldset>
+    <textarea name="positive" rows=20 cols=140 id="save"></textarea>
+    </br>
+</div>
+<h3>jaws log</h3>
+<div id="jaws-log"></div>
+<!--<?php
+		//if(isset($_GET['level']))
+		//	echo '<br>Niveau : '.$_GET['level'].' chargé';
+	?>-->
+<p>
+    <fieldset>
+        <legend> Who ? </legend>
+        <table id="commands" style="border-collapse:collapse;">
+            <caption>Commands</caption>
+            <tr>
+                <td class="keyword">
+                    <img src="css/mouse-left.png" alt="Left Click" />
+                </td>
+                <td class="keyword">Add/Select a tile </td>
+            </tr>
+            <tr>
+                <td class="keyword">
+                    <img src="css/mouse-right.png" alt="Right Click" />
+                </td>
+                <td class="keyword">Remove the selected tile</td>
+            </tr>
+            <tr>
+                <td class="keyword">
+                    <img src="css/toucheDirectionnelles.png" alt="Directionnal Pad" />
+                </td>
+                <td class="keyword">Move camera </td>
+            </tr>
+            <tr>
+                <td class="keyword">
+                    <img src="css/z.png" alt="Z" />
+                </td>
+                <td class="keyword"> Delete the last tile</td>
+            </tr>
+            <tr>
+                <td class="keyword">
+                    <img src="css/s.png" alt="S" />
+                </td>
+                <td class="keyword"> Save level</td>
+            </tr>
+            <tr>
+                <td class="keyword">
+                    <img src="css/p.png" alt="p" />
+                </td>
+                <td class="keyword">Next Tile</td>
+            </tr>
+            <tr>
+                <td class="keyword">
+                    <img src="css/m.png" alt="m" />
+                </td>
+                <td class="keyword"> Previous Tile</td>
+            </tr>
+        </table>
+    </fieldset>
+</p>
+<p>An editor built by Adrien Jarretier and Guillaume Gomez</p>
+<div id="current-cursor-image"><img id="subImg"></img></div>
+<script type="text/javascript">
+window.onload = function() {
+    console.log(ArrayTileInfo);
+    var loc = location.search;
+    var vars = loc.split("=");
+
+    leveljson = "";
+
+    if (vars.length > 1) {
+
+        leveljson = "tracks/" + vars[1];
+
+    }
+    console.log("leveljson : " + leveljson);
+
+
+    jaws.assets.root = "assets/";
+
+    m_listImgURL = [];
+
+    for (var i = 0; i < ArrayTileInfo.length; i++) {
+
+        m_listImgURL.push(ArrayTileInfo[i].url);
+    };
+    jaws.assets.add(m_listImgURL);
+    if (leveljson != "") {
+        jaws.assets.add("../" + leveljson + ".json");
+    }
+    jaws.start(Editor);
+}
+
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jRotate.js"></script>
+<script type="text/javascript">
+var ArrayTileInfo = new Array();
+
+var jqxhr = $.getJSON("TileInfo.json", function() {
+        console.log("success");
+    })
+    .done(function() {
+        console.log("second success");
+    })
+    .fail(function() {
+        console.log("error");
+    })
+    .always(function() {
+        ArrayTileInfo = jqxhr.responseJSON;
+    });
+
+</script>
+</body>
+
+</html>

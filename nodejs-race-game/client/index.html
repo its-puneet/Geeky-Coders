@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cars Online Main Menu</title>
+    <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>The Game</legend>
+        <a href="game.html">
+            Play Online Cars
+        </a>
+    </fieldset>
+    <fieldset>
+        <legend>The editor</legend>
+        <a href="editor.html">
+            Make a Level
+        </a> OR
+        <script src="js/parseJsonFile.js">
+
+
+        </script>
+        <script>
+        ParseJsonFile.createTracksSelectionMenu("level");
+
+        </script>
+        <form action="editor.html" method="get">
+            <p>Load a level :
+                <br/>
+                <select name="level" id="level">
+                </select>
+                <input type="submit" value="Valider" class="myButton" />
+            </p>
+        </form>
+    </fieldset>
+    <footer>
+        <p>A game made by Adrien Jarretier and Gomez Guillaume </p>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+    $('#submit').click(function() {
+
+        var filename = document.getElementById("level").value;
+        document.location.search += "?level" + filename;
+        return false;
+    });
+
+    </script>
+</body>
+
+</html>

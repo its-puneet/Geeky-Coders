@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>404 - UHOH ! what happened ?</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="js/cars.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/jaws.js"></script>
+    <script src="js/jaws-sprite_list.js"></script>
+    <script src="js/jaws-tile_map.js"></script>
+    <script src="js/manageChat.js"></script>
+    <script src="js/parseJsonFile.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/tileset.js"></script>
+    <script src="js/smartphone-controls.js"></script>
+    <script src="public/constants.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>UHOH ! what happened ?</h1>
+    </header>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-12">
+
+                    <div id="info"></div>
+                    <canvas id="gameCanvas" width="1000" height="500">
+                        Your browser is not compatible !
+                    </canvas>
+                    </br>
+                    <div id="speed">
+                    </div>
+                    <div id="live_info"></div>
+                    <div id="debug"> </div>
+                    <h3>jaws log</h3>
+                    <div id="jaws-log"></div>
+                </div>
+            </div>
+        </div>
+    </br>
+    <footer>
+        A game developed by Adrien Jarretier and Gomez Guillaume.
+    </footer>
+    <script>
+    username = "";
+    trackName = "";
+
+    var game;
+    window.onload = function() {
+        jaws.unpack();
+        jaws.assets.root = "assets/";
+        jaws.assets.add(["cars/Viper.png", "cars/Cobra.png",
+            "cars/Firebird1980.png", "cars/Herbie.png"
+        ]);
+
+        var arrayTileInfo = [];
+        ParseJsonFile.getTileInfo(function(arrayTileInfo) {
+
+            for (var i = 0; i < arrayTileInfo.length; i++) {
+                jaws.assets.add(arrayTileInfo[i].url);
+            };
+
+        });
+
+        var log = '404';
+        var passwd = $('#password').val();
+        var minCar = 1;
+        var maxCar = 1;
+        var isHost = true;
+        var isPrivate = false;
+        var lap = 404;
+        trackName = '404';
+
+        var message = {
+            login: log,
+            minCar: minCar,
+            maxCar: maxCar,
+            host: isHost,
+            private: isPrivate,
+            password: passwd,
+            laps: lap,
+            track: trackName
+        };
+        socket.emit(jaws.constants.login, message);
+        jaws.mobileVersion = false;
+        if(window.mobileAndTabletcheck()) {
+            startup();
+            jaws.mobileVersion = true;
+        }
+    }
+
+    </script>
+    <!-- websockets to communicate with node.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    var socket = io();
+    jaws.constants = new Constants();
+    // by default connect to the host that served this page
+
+    socket.on(jaws.constants.instanceNotFound, function() {
+        alert('no game found');
+    });
+
+    socket.on(jaws.constants.id, function(id) {
+        username = '404';
+
+        var url = "carsList.json";
+
+        ParseJsonFile.parseJson(url, function(carsList) {
+
+            var max = carsList.length - 1;
+            var min = 0;
+
+            var randomlySelected = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            //launch the game when we get the id with a random car
+            game = new Game(socket, id, trackName, [carsList[randomlySelected]]);
+            jaws.start(game);
+
+        });
+    });
+
+    socket.on(jaws.constants.infoPart, function(infos) {
+        laps = infos.laps;
+        nbCarsPlayed = infos.nbComponents;
+        trackName = infos.track;
+    });
+
+
+
+    socket.on(jaws.constants.startGame, function() {
+        var demarre = true;
+    });
+
+    socket.on(jaws.constants.instanceDisconnection, function(message) {
+        alert(message);
+    });
+
+    $(window).unload(function() {
+        alert("Handler for .unload() called.");
+        socket.emit(jaws.constants.disconnection, 'disconnection');
+    });
+
+    </script>
+</body>
+
+</html>
+
