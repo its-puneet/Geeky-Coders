@@ -1,0 +1,262 @@
+<html>
+<title >Chronic kidney disease Prediction</title>
+<head>
+
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.body1 {
+  background-image: url("final1.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#rcorners1 {
+  border-radius: 15px;
+  background: transparent;
+  border-color: black;
+  padding: 13px; 
+  width: 160px;
+  height: 30px;  
+}
+.button4 {
+    border-radius: 100%;
+    border-color: #d57d7a;
+    width:0px;
+    font-size: 17px;
+    backface-visibility: hidden;
+  position: relative;
+  width: 0120px;
+  height: 044px;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: #d7cdcf;
+  border-radius: 100px;
+  border: 0px solid #444;
+  border-width: 0px 0px 0px 0px;
+  padding: 10px 13px 10px 13px;
+    color: #0a0909;
+  font-size: 16px;
+  font-family: consolas;
+  font-weight: 900;
+  font-style: normal
+}
+.radion {
+	border:2px;
+	border-color:black;
+	height:17px;
+	width:17px;
+}
+</style>
+ <body style="background-image: url('../static/img/i3.jpg');  background-repeat: no-repeat;  background-attachment: fixed;background-size: cover;" class="serif">
+
+    <div class="container" style="margin-top: 10px">
+        <div class="row justify-content-md-center">
+            <div class="col-md-29">
+                <div class="card">
+                    <div style="background-color: voilet;" class="card-header">
+                        <center style="color:white">Health Analytics</center>
+                    </div>
+                   <div class="col-sm-10 bd" >
+			  
+			  <br>
+		
+				   
+			</div>
+<form  method="POST">
+  <div class="container">
+    <h1 align = 'center' style="color:black;font-family: Times New Roman; font-size:50px" >Chronic kidney disease Prediction</h1>
+    <p align = 'center'style="font-size:25px">Please fill the following details of your state</p>
+    <form action='/age' method="post">
+	<table align='left' style='padding:15px; border-spacing: 15px; font-size:20 px'>
+	
+	<tr>
+    <td><label for="age"><b>Age</b></label></td>
+    <td><input type="text" placeholder="Enter the age" name="age" id="rcorners1" required></td>
+	</tr>
+	
+	<tr>
+    <td><label for="Bp"><b>BP</b></label></td>
+    <td><input type="text" placeholder="Enter BP" name="bp" id="rcorners1" required></td>
+	</tr>	
+	
+	<tr>
+    <td><label for="sg"><b>SG</b></label></td>
+    <td><input type="text" placeholder="Enter SG" name="sg" id="rcorners1" required></td>
+	</tr>	
+ 
+     <tr>
+    <td><label for="al"><b>AL</b></label></td>
+    <td><input type="text" placeholder="Enter AL" name="al" id="rcorners1" required></td>
+     </tr>
+ 
+      <tr>
+    <td><label for="bgr"><b>BGR</b></label></td>
+    <td><input type="text" placeholder="Enter BGR" name="bgr" id="rcorners1" required></td>
+	</tr>
+ 
+     <tr>
+    <td><label for="bu"><b>BU</b></label></td>
+    <td><input type="text" placeholder="Enter BU" name="bu" id="rcorners1" required></td>
+	</tr>
+ 
+      <tr>
+    <td><label for="sc"><b>SC</b></label></td>
+    <td><input type="text" placeholder="Enter SC" name="sc" id="rcorners1" required></td>
+	</tr>
+ 
+     <tr>
+    <td><label for="sod"><b>SOD</b></label></td>
+    <td><input type="text" placeholder="Enter SOD" name="sod" id="rcorners1" required></td>
+	</tr>
+     
+	</table>
+	</form>
+	</table>
+ 
+    
+	<table align='left' style='padding:15px; border-spacing: 15px; font-size:20 px'>
+	
+	<tr>
+    <td><label for="su"><b>SU</b></label></td>
+    <td><input type="text" placeholder="Enter the SU" name="su" id="rcorners1" required></td>
+	</tr>
+	
+	<tr>
+    <td><label for="pot"><b>POT</b></label></td>
+    <td><input type="text" placeholder="Enter POT" name="pot" id="rcorners1" required></td>
+	</tr>	
+	
+	<tr>
+    <td><label for="hemo"><b>HEMO</b></label></td>
+    <td><input type="text" placeholder="Enter HEMO" name="hemo" id="rcorners1" required></td>
+	</tr>	
+ 
+     <tr>
+    <td><label for="pcv"><b>PCV</b></label></td>
+    <td><input type="text" placeholder="Enter PCV" name="pcv" id="rcorners1" required></td>
+     </tr>
+ 
+      <tr>
+    <td><label for="wc"><b>WC</b></label></td>
+    <td><input type="text" placeholder="Enter WC" name="wc" id="rcorners1" required></td>
+	</tr>
+ 
+     <tr>
+    <td><label for="rc"><b>RC</b></label></td>
+    <td><input type="text" placeholder="Enter RC" name="rc" id="rcorners1" required></td>
+	</tr>
+ 
+      <tr>
+    <td><label for="rbc"><b>RBC</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="rbc" value="normal" required><b>Normal</b>
+	<input type="radio" class="radion" name="rbc" value="abnormal"  ><b>Abnormal</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="pc"><b>PC</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="pc" value="normal" required><b>Normal</b>
+	<input type="radio" class="radion" name="pc" value="abnormal"  ><b>Abnormal</b>
+	</td>
+	</tr>
+ 
+     <tr>
+	<td colspan="2" align="center" ><button class="button4" type="submit" name="predict" align='center' value="Predict" >Predict</button></td>
+     	</tr>
+ 
+     </table>
+       
+ 
+    
+     <table align='left center' style='padding:15px; border-spacing: 15px; font-size:20 px'>
+     
+ 
+     <tr>
+    <td><label for="pcc"><b>PCC</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="pcc" value="present" required><b>Present</b>
+	<input type="radio" class="radion" name="pcc" value="notpresent"  ><b>Not Present</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="ba"><b>BA</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="ba" value="present" required><b>Present</b>
+	<input type="radio" class="radion" name="ba" value="notpresent"  ><b>Not Present</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="htn"><b>HTN</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="htn" value="yes" required><b>Yes</b>
+	<input type="radio" class="radion" name="htn" value="no"  ><b>No</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="dm"><b>DM</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="dm" value="yes" required><b>Yes</b>
+	<input type="radio" class="radion" name="dm" value="no"  ><b>No</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="cad"><b>CAD</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="cad" value="yes" required><b>Yes</b>
+	<input type="radio" class="radion" name="cad" value="no"  ><b>No</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="appet"><b>APPET</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="appet" value="good" required><b>Good</b>
+	<input type="radio" class="radion" name="appet" value="poor"  ><b>Poor</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="pe"><b>PE</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="pe" value="yes" required><b>Yes</b>
+	<input type="radio" class="radion" name="pe" value="no"  ><b>No</b>
+	</td>
+	</tr>
+ 
+     <tr>
+    <td><label for="ane"><b>ANE</b></label></td>
+    <td style = "vertical-align:middle">
+    <input type="radio" class="radion" name="ane" value="yes" required><b>Yes</b>
+	<input type="radio" class="radion" name="ane" value="no"  ><b>No</b>
+	</td>
+	</tr>
+ 
+ 
+     </table>
+     
+     
+     <table align="center">
+	<tr>
+	<td><label for="age" style="font-size:23px"><b>0-Yes 1-No</b></label></td>
+      <td style="font-size:23px"><b>{{ypred}}</b></td>
+	</tr>
+
+	</table>
+    </form>
+   
+  </div>
+
+</form>
