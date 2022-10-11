@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(221, 84, 29);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Scroll-bar*/
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fffcfb;
+  border-radius: 30px;
+  outline: 1px solid #fffcfb;
+}
+
+.img-h:hover {
+  transform: scale(1.05);
+  transition: 1.1s;
+}
+
+.car-len {
+  width: 500px;
+}
+
+.img-editt {
+  height: 72vh;
+  width: 70%;
+}
+
+.img-editt1 {
+  max-height: 24%;
+  width: 90%;
+}
+
+.wrapper {
+  background-image: url("../images/bgshoes2.jpg");
+  background-size: cover;
+  height: 980px;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: rgb(221, 84, 29);
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: white;
+  overflow: hidden;
+  color: rgb(221, 84, 29);
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: rgb(221, 84, 29);
+  box-shadow: 0px -5px 20px 0px black;
+}
+
+nav.black ul li a {
+  color: white;
+}
+
+nav.black ul li a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+nav.black ul li a.home{
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px; 
+}
+
+nav.black .logo {
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 20px;
+}
+
+nav ul li a,
+.list-unstyled li a {
+  text-decoration: none;
+  color: rgb(221, 84, 29);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(221, 84, 29);
+  border-bottom: 2px solid rgb(221, 84, 29);
+  padding-bottom: 10px;
+}
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: rgb(221, 84, 29);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.shadow {
+  box-shadow: 0 0 12px 0px #333333c7;
+}
+
+.heading {
+  display: block;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0 auto 40px auto;
+  font-weight: 600;
+}
+
+
+
+.card {
+  margin: auto;
+  transition: transform 0.2s ease;
+}
+
+.card-title,
+.card-text {
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.col {
+  margin: 20px auto;
+}
+.container-fluid {
+  padding: 40px;
+}
+
+.explore-btn {
+  margin: auto;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.explore-btn > a {
+  text-decoration: none;
+  color: white;
+}
+
+.latest-trend {
+  background-image: url("../images/bg3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+}
+
+.left-heading {
+  text-align: left;
+  font-family: "Great Vibes", cursive;
+  padding: 100px 0 0 70px;
+  margin: auto;
+  color: black;
+}
+
+.left-heading h1 {
+  font-size: 72px;
+}
+
+.latest-trend .left-heading h1 {
+  text-shadow: 2px 3px 4px #343a40;
+}
+
+.left-heading button {
+  font-family: "Helvetica Neue", sans-serif;
+  margin-top: 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.best-seller {
+  background-image: url("../images/bg4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 640px;
+}
+
+.best-seller .left-heading {
+  text-align: left;
+  font-family: "Great Vibes", cursive;
+  padding: 80px 0 0 70px;
+  margin: auto;
+}
+
+.best-seller .left-heading h1 {
+  text-shadow: 2px 3px 4px #343a40;
+}
+
+/*back to top button*/
+#button {
+  display: inline-block;
+  background-color: rgb(243, 234, 234);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: rgb(221, 84, 29);
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* footer begin from here  */
+footer {
+  background-color: rgb(243, 234, 234);
+  color: rgb(206, 111, 74);
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+.footerContent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.column1 h5 {
+  color: rgb(190, 71, 23);
+  font-size: 1.5rem;
+}
+.column2 h1,
+footer h3 {
+  color: rgb(190, 71, 23);
+}
+.column1 a {
+  text-decoration: none;
+  color: rgb(206, 111, 74);
+}
+
+.column2 a {
+  text-decoration: none;
+  color: rgb(206, 111, 74);
+  font-size: 19px;
+  padding: 5px 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 5px 2px;
+  display: inline-block;
+}
+
+.column2 a:hover {
+  color: rgb(170, 111, 0);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.column2 p {
+  font-size: 2.5em;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactIcons {
+  width: 80%;
+  margin: auto;
+}
+.copy {
+  /* height: 5vh; */
+  display: flex;
+  justify-content: center;
+}
+/* Code for responsive footer  */
+@media (max-width: 890px) {
+  .column1,
+  .column2 {
+    width: 50%;
+  }
+  .contactLinks {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .left-heading {
+    padding: 50px 0 0 0px !important;
+    text-align: center !important;
+  }
+}
+@media (max-width: 500px) {
+  .footerContent {
+    justify-content: center;
+  }
+  .column1 {
+    margin: 15px 0;
+    padding-left: 4%;
+  }
+  .column2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 4%;
+  }
+}
+/* Code for responsive footer ends here  */
+
+.preloading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsla(0, 100%, 100%, 1);
+  height: 100vh;
+  width: 100vw;
+  z-index: 99999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.preloading .outer-circle {
+  height: 8vmin;
+  width: 8vmin;
+  border: 5px solid hsla(0, 0%, 0%, 0.1);
+  border-top: 5px solid rgb(221, 84, 29);
+  border-radius: 50%;
+  animation: preloading 0.8s linear infinite;
+}
+.preloading.loading {
+  display: flex;
+}
+
+
+@keyframes preloading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1005px) {
+  nav ul li {
+    display: inline-block;
+    padding: 16px 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    background-position-y: 15vh;
+    background-size: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-image: url("../images/bgshoes2.jpg");
+  }
+
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+    color: white;
+  }
+  nav {
+    box-shadow: 0px -5px 20px 0px black;
+  }
+  nav ul {
+    max-height: 0px;
+    background: rgb(221, 84, 29);
+  }
+
+  nav.black ul {
+    background: rgb(221, 84, 29);
+  }
+
+  .showing {
+    max-height: 34em;
+    padding-right: 0;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li a {
+    color: white;
+  }
+  nav ul li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+}
+@media (min-width: 990px) and (max-width: 1111px) {
+  nav ul {
+    padding-right: 0;
+  }
+  nav ul li {
+    padding: 16px 1.55%;
+  }
+}
+.container {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 60%;
+  font-size: medium;
+}
+label {
+  color: black;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(92, 181, 216);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: medium;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.contactform {
+  text-align: center;
+  color: rgb(221, 84, 29);
+}
+.new {
+  align-items: center;
+}
+
+.btn-div {
+  margin: auto;
+}
+
+
+
+/* for card responsiveness */
+@media (max-width: 930px) {
+  .col {
+    min-width: 43%;
+  }
+  .btn-div {
+    width: 100%;
+    padding-left: 40%;
+  }
+  .col-12 {
+    flex: 0;
+  }
+}
+@media (max-width: 830px) {
+  .btn-div {
+    padding-left: 37%;
+  }
+}
+@media (max-width: 640px) {
+  .col {
+    min-width: 300px;
+    max-width: 80%;
+  }
+  .col-12 {
+    flex: 0 0 100%;
+  }
+  .btn-div {
+    width: fit-content;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .col {
+    max-width: 100%;
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 5px;
+    background: #fff;
+  }
+
+  .progress-bar {
+    height: 5px;
+    background: #000;
+    width: 0%;
+  }
+}
+
+@media (max-width: 420px) {
+  .progress-container {
+    width: 100%;
+    height: 5px;
+    background: rgb(190, 157, 157);
+  }
+
+  .progress-bar {
+    height: 5px;
+    background: #000;
+    width: 0%;
+  }
+
+  .wrapper {
+    background-position-y: 10vh;
+    background-size: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-image: url("../images/bgshoes2.jpg");
+  }
+}
