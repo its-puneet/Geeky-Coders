@@ -1,0 +1,21 @@
+Hello this is my CV.
+I am fully passionate about my work and I'm always ready to take nw challanges in life.
+@media(max-width: 12450px) {
+*{
+    background-color: red;
+}
+}
+action="chopravaibhav953@gmail.com" method="post"
+
+
+index html
+<script src="./script.js"></script>
+
+
+
+
+style class
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}

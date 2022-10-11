@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Timmana&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color:#FAB151;
+
+    ;
+    width:30vw;
+    height: 100vh;
+    font-family: 'Timmana', sans-serif;
+}
+.sidebar h3{
+    padding-left: 20px;
+    padding-top: 10%;
+    color:rgb(101, 6, 133);
+}
+
+.sidebar nav{
+    padding: 30px;
+    
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 7px 0;
+}
+.sidebar nav a{
+    text-decoration:none;
+    color:black
+}
+.sidebar nav li a:hover{
+        color:rgb(243, 9, 48);
+    }
+
+.main{
+    background-color:#FCCE53;
+    width:90vw
+}
+
+.info{
+    margin: 80px auto;
+    background-color:#F77D50;
+    height: 83vh;
+    width: 80vw;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+}
+.info nav{
+    padding:30px;
+}
+.info nav li{
+    list-style: none;
+}
+.container{
+    display: flex;
+}
+.img{
+    width: 297px;
+}
+.sidebar h3{
+    font-size: 200%;
+}
+.info{
+    display: flex;
+    justify-content:space-between;
+   }
+.info h1{
+    font-size: 65px;
+}
+.info h2{
+    font-size: 30px;
+}
+.info h3{
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'Timmana', sans-serif;
+}
+.info h4{
+    font-size: 21px;
+}
+.info button{
+    margin-top: 10px;
+    padding: 10px;
+    color:rgb(44, 15, 158);
+    background-color:cyan;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info button button{
+    cursor: pointer;
+}
+.info button:hover{
+    cursor: pointer;
+    background-color:whitesmoke;
+    color:rgb(79, 48, 134);
+}
+.info li a{
+    text-decoration:none;
+}
+.contactpage{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    padding: 0 34px;
+    padding-top: 35px;
+}
+.controlpage h1{
+    font-family: 'Timmana', sans-serif;
+    font-weight: bold;
+}
+
+.form-control{
+    font-weight: bold;
+    width:350px !important;
+    height:5vh ;
+}
+
+.myself nav{
+    width:620px;
+}
+.skillcontainer{
+    width:350px;
+    height:1vh;
+    font-weight:600;
+}
+.skill1{
+    width:200px;
+    height:1vh;
+    background-color:rgb(138, 241, 103) ;
+}
+.skill2{
+    width:250px;
+    height:1vh;
+    background-color:rgb(22, 253, 238) ;
+}
+.skill3{
+    width:150px;
+    height:1vh;
+    background-color:rgb(138, 241, 103) ;
+}
+.skill4{
+    width:125px;
+    height:1vh;
+    background-color:rgb(138, 241, 103) ;
+}
+.skill5{
+    width:500px;
+    height:1vh;
+    background-color:rgb(22, 253, 238) ;
+}
+.skill6{
+    width:200px;
+    height:1vh;
+    background-color:rgb(138, 241, 103) ;
+}
+.management{
+    padding-bottom: 30px;
+}
+.icon{
+    align-items: left;
+}
+.burger{
+    position:absolute;
+    cursor:pointer;
+    top:10px;
+    left:10px;
+}
+.cross{
+    margin-left: 190px;
+}
