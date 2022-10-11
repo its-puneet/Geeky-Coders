@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCA311;
+    font-family: 'Poppins', sans-serif;
+}
+.App {
+    text-align: center;
+}
+.App h1 {
+    font-size: 54px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+button[type=button] {
+    padding: 12px 40px;
+    border-radius: 10px;
+    border: 4px solid #14213D;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 22px;
+    color: #14213D;
+    margin-bottom: 20px;
+}
+button[type=button]:hover {
+    background-color: #14213D;
+    color: white;
+}
+.App h3 {
+    font-size: 30px;
+}
+.theJoke {
+    background-color: #14213D;
+    padding: 50px 70px;
+    width: 40%;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+}
