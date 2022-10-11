@@ -1,0 +1,127 @@
+*
+{
+    margin :0;
+    padding : 0;
+}
+body {
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+.navbar
+{
+    background-image: linear-gradient(to right,#99badd,#00bfff);
+    padding : 0!important;
+    
+}
+.navbar-brand img
+{
+    height:40px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding:0 10px;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight:600;
+    float: right;
+    text-align: left;
+
+}
+.fa-bars 
+{
+    color: #fff !important;
+}
+.navbar-toggler
+{
+outline: none !important;
+}
+#banner
+{
+    background-image:linear-gradient(to right,#99badd,#00bfff) ;
+    color:#fff;
+    padding-top:5%;
+    z-index:500;
+}
+.title
+{
+    padding-top: 0;
+    font-size:50px;
+    font-weight:600;
+    margin-top:50px;
+
+}
+.play-btn
+{
+    width:45px;
+    margin:20px;
+}
+#banner a{
+    color:#fff;
+    text-decoration: none;
+}
+.im
+{
+    display:flex;
+    border-radius: 50%;
+    margin-left: 70px;
+    top:0px;
+    
+}
+.par
+{
+    font-size: 20px;
+}
+#features
+{
+    padding:px,0;
+}
+.im1
+{
+    
+    padding-top: 100px;
+    padding-left: 80px;
+}
+.heading{
+    padding-left: 250px;
+    padding-top : 50px;
+    font-weight : 600;
+}
+.desc{
+    padding-top : 30px;
+}
+.foot
+{
+    width:100%;
+    height: 500px;
+    background-color:aliceblue;
+}
+.contact{
+    padding-left: 500px;
+    padding-top: 50px;
+}
+.para1
+{
+    padding-left: 300px;
+}
+
+.copy
+{
+    width:100%;
+    padding-top: 30px;
+    padding-left:100px;
+    text-align: center;
+    color:darkslategray;
+}
+#abouthead
+{
+    color:blueviolet;
+    padding-top:30px;
+    padding-left: 500px;
+}
