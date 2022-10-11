@@ -1,0 +1,121 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.17/tailwind.min.css" integrity="sha512-yXagpXH0ulYCN8G/Wl7GK+XIpdnkh5fGHM5rOzG8Kb9Is5Ua8nZWRx5/RaKypcbSHc56mQe0GBG0HQIGTmd8bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/allbtns.css">
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <nav class="black">
+      <div class="menu-icon">
+        <div class="bar-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      </div>
+      <a href="index.html"><div class="logo" style="z-index: 1;">Heel2Toe</div></a>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="arrivals.html">New Arrivals</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="best.html">Best Sellers</a></li>
+          <li><a href="contact.html" class="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <div class="form-container pt-40 pb-20">
+      <div class="container-fill">
+        <div class="w-full max-w-xl m-auto py-20">
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8" action="" method="get">
+            <!-- <h1 class="contactform mb-10">CONTACT</h1> -->
+            <h1 class="contactform mb-10">CONTACT</h1>
+            <div class="mb-4">
+              <label class="block mb-2" for="name">
+                Name
+              </label>
+              <input autocomplete="off" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Elon Musk">
+            </div>
+            <div class="mb-4">
+              <label class="block  mb-2" for="email">
+                Email
+              </label>
+              <input autocomplete="off" class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="elonmusk.mars@tesla.com">
+            </div>
+            <div class="mb-4">
+              <label class="block  mb-2" for="delivery">
+                Delivery
+              </label>
+              <input autocomplete="off" class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="delivery" type="text" placeholder="Delivery Address">
+            </div>
+            <div class="mb-4">
+              <label class="block  mb-2" for="mobile">
+                Phone Number
+              </label>
+              <input autocomplete="off" class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="mobile" type="tel" placeholder="Phone Number">
+            </div>
+            <div class="mb-4">
+              <label class="block  mb-2" for="category">
+                Category
+              </label>
+              <div class="inline-block relative w-full">
+                <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                  <option>Delivery</option>
+                  <option>Sales</option>
+                  <option>Finance</option>
+                  <option>Misc</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block mb-2" for="textarea">
+                Any Message For Us
+              </label>
+              <textarea style="height:150px" placeholder="when will my Tesla Roadster get delivered??" id="textarea" class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline resize border rounded-md"></textarea>
+            </div>
+    
+            <div class="items-center justify-content-center">
+              <input id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+
+  
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <!-- script for mobile nav links -->
+    <script>
+      const icon = document.querySelector(".menu-icon");
+      const navList = document.querySelector("nav ul")
+
+      icon.addEventListener("click", function(){
+          navList.classList.toggle("showing")
+      })
+  </script>
+
+  </body>
+
+  </html>
