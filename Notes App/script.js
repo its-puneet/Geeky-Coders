@@ -1,7 +1,7 @@
 const noteBtn = document.getElementById("add-btn"),
-  noteTitle = document.getElementById("note-title"),
-  noteText = document.getElementById("note-text"),
-  clear = document.querySelector(".clear");
+noteTitle = document.getElementById("note-title"),
+noteText = document.getElementById("note-text"),
+clear = document.querySelector(".clear");
 
 //   Get notes from local storage
 function getNotes() {
@@ -63,7 +63,7 @@ function showNotes() {
   if (notesObj.length != 0) {
     noteElm.innerHTML = html;
   } else {
-    noteElm.innerHTML = "No notes added, Please add a note";
+    noteElm.innerHTML = "  Add some note";
   }
 }
 
