@@ -1,0 +1,21 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+  "start": "node app.js"
+  },
+  "author": "me",
+  "license": "ISC",
+  "engines": {
+    "node": "16.15.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.0",
+    "mongoose": "^6.5.3"
+  },
+  "description": ""
+}
