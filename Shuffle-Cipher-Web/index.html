@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Shuffle Cipher</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <h1 id="main-header">Shuffle Cipher</h1>
+    <div class="container">
+        <textarea name="TYPE1" type="text" placeholder="Enter text here" id="23" class="cont" rows="15" cols="60"></textarea>
+        <br /><br>
+        <br>
+        <button type="button" value="Encrypt" id="CIPHER">Encrypt</button>
+        <br/><br>
+        <textarea id="24" placeholder="Encrypted/Decrypted text will be shown here" class="font" rows="15" cols="60"></textarea>
+        <div>
+            <select id="enc" name="Select Mode">
+            <option value="Encrypt" class="opt">Encrypt</option>
+            <option value="Decrypt" class="opt">Decrypt</option>
+        </select>
+        </div>
+    </div>
+    <script src="encryption_script.js">
+    </script>
+
+</body>
+
+</html>
