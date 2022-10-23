@@ -1,0 +1,20 @@
+{
+  "name": "book-management-system",
+  "version": "1.0.0",
+  "description": "A Book Management System with NodeJS and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js index.js"
+  },
+  "author": "rachitag112",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
