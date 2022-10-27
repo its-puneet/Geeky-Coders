@@ -1,0 +1,13 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-self: center;
+    align-items: center;
+}
+
+ul img{
+    height:10rem;
+    width:10rem;
+}
+
