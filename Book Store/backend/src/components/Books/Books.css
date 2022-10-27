@@ -1,0 +1,20 @@
+.card{
+    margin: auto;
+    padding: 1rem;
+    width: 850px;
+    height: 500px;
+    
+    align-items: center;
+}
+
+.card> *{
+    display: flex;
+    flex-direction: column;
+}
+
+.book{
+    box-shadow: 5px 5px 5px 10px #ccc;
+    padding: 15px;
+    margin: 25px;
+    text-decoration: none;
+}
