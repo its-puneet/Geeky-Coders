@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %} Deepfake Image Detection {% endblock %}
+{% block content %}
+<html>
+<head>
+    <!----Required Meta Tags---->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+    <div class = "container">
+    <div class = "row">
+
+        <div class = "col-sm">
+            <br><br>
+            <span class = "border border-primary">
+                <img src = "{{ user_image }}" alt = "User Image" class = "img-thumbnail">
+            </span>
+        </div>
+        
+        <div class = "col-sm">
+            <br><br>
+            <h1> Deepfake Prediction: <span class = "badge badge-secondary">{{product}}</span></h1>
+        </div>
+    </div>
+
+    <div>
+        <br><br>
+        <h4><u>How does this work?</u></How></h4><br>
+        <h5> The uploaded file is scanned by a deep neural network consisting of several convolutional layers that analyzes groups of pixels (in this case, a 3 pixel by 3 pixel block) in sequence across the entire image.  The gif below illustrates this process.</h5>
+        <br>
+        <center> <iframe src="https://giphy.com/embed/i4NjAwytgIRDW" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/blog-daniel-keypoints-i4NjAwytgIRDW">via GIPHY</a></p></center>
+        <br>
+        <h5>In addition to these convolutional layers, this model also includes several layers of pooling, dense layers, and a variety of normalization techniques.  <br><br>
+            We experimented with a CNN that I tuned personally, a CNN that employs a pretrained convolutional model (Xception), and a a combination of both in an ensemble.  While the ensemble method performed the best, it’s long training time as well as long prediction time made it prohibitive for this example.  Therefore, this test was done with the personally tuned CNN as it provided a high accuracy (93% ) as well as a much faster runtime.  <br>
+            <br><u> Summary of the model architecture:</u><br><br>
+            <center><img src="static/images/model architecture.png" alt="Model Architecture" ></center> <br><br>
+            <u>The methodology behind the architecture is as follows:</u><br><br>
+            <p style="margin-left: 40px">- Convolutional layers apply the scanning operation mentioned above to the supplied image and passes this information to the next layer.</p> 
+            <p style="margin-left: 40px">- Pooling combines the outputs of the convolutional layers into a single layer that can then be passed along to the next layers. </p>
+            <p style="margin-left: 40px">- Dense layers connect every neuron in one layer to every neuron in the next layer. </p></h5> <br><br>
+
+    </div>
+
+    <div id = 'future work'>
+        <br><br><br>
+        <h4><u><center>Future Work</center></u></h4><br>
+        <h5> With more time, we can improve on this project in the following ways:<br><br>
+            1. Continue to develop the models in order to increase perfromance in both speed and accuracy. <br>
+            2. Expand the capability of the model to account for all types of altered images (poor photo shops, animations, etc) in order to have a more complete detection system than just hyperrealistic deepfake images.<br>
+            3. Expand the scope of this project to include being able to scan video for deepfakes as this is increasingly becoming problematic technology. <br> <br><br>
+        </h5>
+    </div>
+
+    <div>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;by Jeff Spagnola<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Follow me on <a href = 'https://twitter.com/SpagnolaJeff'> Twitter </a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Contact me at <a href="mailto:jeff.spags@gmail.com">jeff.spags@gmail.com</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Check out the <a href = 'https://github.com/spags093/dsc-capstone-project-v2-onl01-dtsc-ft-070620'> Github Repository </a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Check out my <a href = 'http://www.github.com/spags093'> Personal Github </a><br><br>
+        </h5>
+    </div>
+
+</div>
+</body>
+</html>
+{% endblock %}
