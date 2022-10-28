@@ -34,7 +34,6 @@ body {
   left: 300px;
   background: #fff;
   border-radius: 1rem 0 0 1rem;
-  z-index: 1000;
 }
 
 .logo img {
@@ -91,7 +90,7 @@ body {
 .about {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .box {
@@ -107,7 +106,9 @@ body {
   font-size: 0.938rme;
   font-weight: 400;
 }
-
+.menu{
+  margin-top:1rem;
+}
 .menu a {
   width: 100%;
   font-size: 1rem;
@@ -138,7 +139,7 @@ body {
 }
 
 .main-home {
-  padding: 20px;
+  padding: 40px;
   overflow: hidden;
 }
 
