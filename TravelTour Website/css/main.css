@@ -151,9 +151,9 @@ html{
 /*----------------------------*/
 .showcase .body span{
 
-    font-size: 3rem;
-    font-family: "Sacramento",cursive;
-    color: #31ff7a;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    color: #faea06;
     text-shadow: 0px 1px 2px #333;
     background-color: none;
 }
