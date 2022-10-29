@@ -1,0 +1,24 @@
+.Dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.FloatingBox {
+    position: absolute;
+    margin-left: 0;
+    padding: 0;
+    border: solid 1px rgba(255,255,255,.15);
+    display: flex;
+    flex-direction: column;
+    background: #141414;
+}
+
+.FloatingBox > * {
+    padding: 1vh;
+}
+
+.FloatingBox span:hover {
+    text-decoration: underline;
+}
