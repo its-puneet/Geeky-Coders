@@ -1,0 +1,38 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d3d3;
+    height: 100vh;
+    width: 100vw;
+}
+
+.app__body {
+    display: flex;
+    border-radius: 4px;
+    width: 90vw;
+    height: 95vh;
+    background-color: #ebebeb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.login__screen {
+    position: relative;
+    background: url('https://cdn.defence24.pl/2021/09/09/originals/mVy3v0Ok8uyQXyn8VH5rG2eTqweCwmLhi3rNz6Wj.jpg') no-repeat center/cover fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.login__text {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240, 229, 229);
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 30px;
+    color: #043404;
+    cursor: pointer;
+}
