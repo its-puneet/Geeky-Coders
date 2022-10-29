@@ -55,3 +55,6 @@ button{
     cursor: pointer;
     outline: none;
 }
+button:hover{
+    background-color: rgb(255, 255, 0);
+}
