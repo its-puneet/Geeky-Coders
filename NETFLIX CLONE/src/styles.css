@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,42 @@
+.SearchContent {
+    padding: 95px 10px;
+    color: white;
+}
+
+.SearchGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 31.5%);
+    grid-auto-rows: 80px;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+.SearchGrid .GridItem:focus,
+.SearchGrid .GridItem:hover {
+  transform: scale(1.1);
+}
+
+.GridItem {
+    transition: transform 500ms;
+}
+
+.GridItem > * {
+    margin: 0;
+}
+
+@media(min-width: 600px) {
+    .SearchContent {
+        margin: 0 10px;
+    }   
+
+    .SearchGrid {
+        grid-template-columns: repeat(6, 16%);
+        grid-auto-rows: 140px;
+    }
+}
+
+@media(min-width: 1650px) {
+    .SearchContent {
+        font-size: 1.6vw;
+    }
+}
