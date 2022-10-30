@@ -1,0 +1,105 @@
+.navbar ul li
+{
+    list-style-type: none;
+    display:inline-block;
+    text-align: center;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2.5vh;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    background:orange;
+    color: white;
+    
+}
+
+.navbar 
+{
+
+    background:orange;
+    color: white;
+     top: 0;
+}
+.main-body 
+{
+    margin:2.5vh 0.5vw 2.5vh 0.5vw;
+    padding-bottom: 2.5vh;
+    text-align:center;
+    top:10px;
+}
+.product
+{
+    display: inline-block;
+    padding-left: 2.5vw;    
+}
+.product img 
+{
+    height: 45vh;
+    width: auto;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+.form-field
+{
+    padding-bottom:10px;
+    padding-top:10px;
+    
+}
+#cart
+{
+    
+    padding-bottom:50px;
+  padding-top:40px;
+  
+}
+#footer 
+{
+    background-color:orange ;
+    color: white;
+    padding:2vh 2.5vw 2vh 2.5vw;
+    text-align:right;
+}
+.sub-main
+{
+  padding-bottom:5px;
+  padding-top:5px;
+  display:inline-block;
+}
+
+form {
+    border: 1px solid black;
+    margin: 20px 450px 20px 450px;
+}
+  
+ 
+  input[type=text], input[type=address] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: gold;
+    color: black;
+    padding: 20px 60px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+  }
+  .container {
+    padding: 16px;
+}
+
+  .login-text
+  {
+    text-align: center;
+ 
+  }
+  table,th,tr{
+  border:2px solid black;
+
+  }
