@@ -1,11 +1,11 @@
 # Text to Speech
 ## Get started
 
-This is a simple text to speech Project. It converts any given text to speech. This project is made using python 3
+This is a simple text to speech Project. It converts any given text to speech. This project is made using python 3 so you need python 3 install in you computer.
 
 ## How to run the project
 
-- First download the program
+- First download the project
 
 - Install the requirements
 ```bash
