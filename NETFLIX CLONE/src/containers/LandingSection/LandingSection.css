@@ -1,0 +1,143 @@
+.landingSection {
+  height: 470px;
+  width: 100%;
+  border-bottom: 8px solid #222;
+}
+
+.landingTexts {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: calc(30% - 90px);
+  text-align: center;
+  color: #fff;
+}
+
+.landingTexts > * {
+  margin-top: 15px;
+}
+
+.landingTexts h3 {
+  margin-top: 0px;
+  font-weight: 400;
+}
+
+.ButtonSticker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.TextField {
+  background-color: #fff;
+  width: 80%;
+  max-width: 500px;
+}
+
+.TextField:active {
+  color: white;
+  border: none;
+}
+
+.tv-section {
+  height: 410px;
+  background-color: black;
+  border-bottom: 8px solid #333;
+  color: #fff;
+}
+
+.tv-inner, .responsive-tv-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.tv-section img {
+  width: 70%;
+}
+
+.faq-section {
+  background-color: black;
+  border-bottom: 8px solid #333;
+  color: #fff;
+}
+
+.GetStartedComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.GetStartedComponent > * {
+  margin-bottom: 15px;
+}
+
+.ButtonSticker button {
+    margin-top: 15px;
+}
+
+@media (min-width: 600px) {
+  .landingSection {
+    height: 620px;
+  }
+
+  .landingTexts {
+    width: 70%;
+    top: calc(40% - 45px);
+  }
+
+  .GetStartedComponent {
+    width: 100%;
+  }
+
+  .tv-section {
+    height: 450px;
+  }
+
+  .tv-section img {
+    width: 45%;
+  }
+}
+
+@media(min-width: 950px) {
+    .ButtonSticker {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ButtonSticker button {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 1199px) {
+  .responsive-tv-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width: 1650px) {
+    .landingSection,
+    .tv-section,
+    .faq-section {
+        font-size: 1.75rem;
+    }
+
+    .tv-section img {
+        width: 35%;
+    }      
+}

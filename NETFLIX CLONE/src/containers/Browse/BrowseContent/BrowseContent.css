@@ -1,0 +1,77 @@
+.TextsAndButtons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    margin: 0 4% 0 4%;
+    height: 100%;
+}
+
+.verticalItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+    height: 200px;
+    max-width: 50%;
+}
+
+.verticalItem h3 {
+    margin: 0;
+    font-size: 3.6vw;
+}
+
+.verticalItem span {
+    font-size: 3.4vw;
+}
+
+.verticalItem > * {
+    padding: 10px;
+}
+
+.horizontalButtonsHolder {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.horizontalButtonsHolder > * {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.horizontalButtonsHolder button {
+    height: 37px;
+    width: 118px;
+    font-size: 0.8rem;
+}
+
+.Carousels {
+    padding-bottom: 10px;
+}
+
+@media(min-width: 600px) {
+    .horizontalButtonsHolder > * {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .horizontalButtonsHolder button {
+        height:38px;
+        width: 138px;
+        font-size: 1rem;
+    }
+
+    .verticalItem span {
+        font-size: 1.4vw;
+    }
+
+    .verticalItem h3 {
+        font-size: 1.6vw;
+    }
+}
+
+@media(min-width: 1650px) {
+
+}

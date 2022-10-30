@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 * {
     margin: 0;
     padding: 0; 
   }
-  
+  span{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+  }
+  .pmar{
+    margin-top: 30px;
+  }
   .navigation {
     margin-top: 20px;
     font-family: var(--font1);

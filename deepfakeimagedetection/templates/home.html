@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %} Deepfake Image Detection {% endblock %}
+{% block content %}
+<html>
+<head> </head>
+<body>
+
+    <div class = "col-sm" id = 'header image'>
+        <br><br>
+        <center><img src="static/images/deepfake-video.jpg" alt="Top Image" width = '700' height = '500'></center>
+        
+    </div>
+
+    <div class = "col-sm" id = 'abstract'>
+        <br><br><br>
+        <center><u><h4> Abstract </h4></u></center>
+        <center><h5> In recent years, deepfake technology has made huge leaps in terms of accuracy, quality, and most of all: believability. At one time or another, we've all been fooled by a photoshopped viral image or even someone's Snapchat filter. The abilitly to determine whether or not an image is, in fact, real is quickly becoming a necessity in a world that's becoming more and more susceptible to "questionable" information. Recently, doctored images have made headlines and divided people in their opinions of whether these images were legitimate.
+            <br><br>
+            In this project, I set out to build an image classification system that can determine whether an image is real or fake. In order to achieve this, I built several iterations of convolutional neural networks that trained on hundreds of thousands of images of human faces, roughly half real images and half doctored images. After creating a CNN that I personally tuned, creating a CNN with a pretrained model, and creating an ensemble of both, I was able to achieve a 97% accuracy in the detection of real vs. fake images. With this level of accuracy on the training and test sets, I felt that it was ready to be deployed to web app where users can upload a new, untrained face image and the model can determine the validity of their image as well as explain how it came to that conclusion. </h5></center>
+            <br><br><br>
+    </div>
+
+    <div>
+        <center><h4><u> Real or Fake? </u></h5>
+        <h5> Just to illustrate how difficult it is to tell the difference, let's see if you can easily determine the difference between a real photo and a deepfake image.<br>
+            Below are several headshots.  Try to pick out which of these is a deepfake image.  </h5><br>
+        
+        <img src="static/images/deepfake1.jpg" alt="Image 1" width = '350' height = '350'>
+        <img src="static/images/deepfake2.jpg" alt="Image 2" width = '350' height = '350'>
+        <img src="static/images/deepfake3.jpg" alt="Image 3" width = '350' height = '350'>
+        <img src="static/images/deepfake4.jpg" alt="Image 4" width = '350' height = '350'>
+        <img src="static/images/deepfake5.jpg" alt="Image 5" width = '350' height = '350'>
+        <br><br>
+        <h5><b>Hint:</b>  They're actually all computer generated.  I promise.  Check out these examples and more <a href = 'https://generated.photos/faces'> here </a>.
+        </h5><br><br>
+        </center>
+
+
+    </div>
+
+    <div>
+        <br>
+        <center><h4><u>Test the Model</u></h4>
+        <h5>In order to test out the accuracy of our model's ability to predict a deepfake image, we've constructed a simple app where the user can upload an 'headshot' or image of a human face, and the model will predict whether the image is real or a deepfake.  Give it a shot below!
+        </h5></center>
+        <br>
+    </div>
+
+
+    <div class = "col-sm">
+        <center>
+            <h6><b><u>Note: </u> </b> <br>
+                 This model was trained to a 93% accuracy on high quality deepfake images like those featured above.  Currently, this model does not work as well on poorly photoshopped or low resolution images.  <br>
+                 With more time, we can expand the scope of this model to include the detection of these things. 
+            </h6> <br><br>
+        </center>
+        <center><h3> <center><span class = "badge badge-danger">  Upload Image Below </span></center></h3><br>
+            <form action = "/predict" method = "post" enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit" value = "Upload">
+        </form></center>
+        <br><br><br>
+    </div>
+
+    <div>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;by Jeff Spagnola<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Follow me on <a href = 'https://twitter.com/SpagnolaJeff'> Twitter </a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Contact me at <a href="mailto:jeff.spags@gmail.com">jeff.spags@gmail.com</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Check out the <a href = 'https://github.com/spags093/dsc-capstone-project-v2-onl01-dtsc-ft-070620'> Github Repository </a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Check out my <a href = 'http://www.github.com/spags093'> Personal Github </a><br><br>
+        </h5>
+    </div>
+
+</body>
+</html>
+{% endblock %}
+

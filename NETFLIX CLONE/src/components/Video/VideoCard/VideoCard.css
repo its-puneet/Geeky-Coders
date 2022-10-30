@@ -1,0 +1,37 @@
+.VideoCard {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.VideoCard:hover .VideoInfo {
+    display: block;
+}
+
+.NetflixOriginalCard:hover .VideoInfo {
+    display: block;
+}
+
+.VideoInfo {
+    display: none;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.VideoInfo h6 {
+    margin: 0;
+}
+
+.horizontalStyle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horizontalStyle span {
+    font-size: 0.5em;
+}
+
+

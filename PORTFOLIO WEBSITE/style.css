@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Timmana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 .sidebar{
-    background-color:#FAB151;
+    background-color:#940554;
 
     ;
     width:30vw;
@@ -15,7 +15,7 @@
 .sidebar h3{
     padding-left: 20px;
     padding-top: 10%;
-    color:rgb(101, 6, 133);
+    color:rgb(0,0, 0);
 }
 
 .sidebar nav{
@@ -29,10 +29,10 @@
 }
 .sidebar nav a{
     text-decoration:none;
-    color:black
+    color:whitesmoke;
 }
 .sidebar nav li a:hover{
-        color:rgb(243, 9, 48);
+        color:rgb(243, 239, 9);
     }
 
 .main{
@@ -45,7 +45,7 @@
     background-color:#F77D50;
     height: 83vh;
     width: 80vw;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani',sans-serif;
     display: flex;
 }
 .info nav{
@@ -68,21 +68,21 @@
     justify-content:space-between;
    }
 .info h1{
-    font-size: 65px;
+    font-size: 50px;
 }
 .info h2{
     font-size: 30px;
 }
 .info h3{
-    font-size: 29px;
+    font-size: 5rem;
     font-weight: bold;
-    font-family: 'Timmana', sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 .info h4{
     font-size: 21px;
 }
 .info button{
-    margin-top: 10px;
+    margin-top: 60px;
     padding: 10px;
     color:rgb(44, 15, 158);
     background-color:cyan;
@@ -159,7 +159,7 @@
 .management{
     padding-bottom: 30px;
 }
-.icon{
+.icons{
     align-items: left;
 }
 .burger{

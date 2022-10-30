@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -118,11 +122,16 @@ ul {
     flex-direction: row;
     padding: 0px 1px 6px 6.3px;
 }
-
+/* #music img{
+    color:#d65b5b;
+} */
 .Mu {
-    font-weight: 700;
+    font-weight: 200;
     font-size: 36px;
     padding-left: 16px;
+    /* color:rgb(204,0,0); */
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow:2px 2px 6px #eb8686;
 }
 
 #music h2 {
@@ -150,6 +159,7 @@ ul {
     transition-duration: 0.4s;
     text-decoration: none;
     display: inline-block;
+    border-radius: 2.5rem;
 }
 
 .Trial:hover {
@@ -225,6 +235,7 @@ ul {
     text-decoration: none;
     display: inline-block;
     margin-top: 37px;
+    border-radius: 2.5rem;
 }
 
 .purple-btn:hover {

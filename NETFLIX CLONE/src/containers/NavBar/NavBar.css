@@ -1,0 +1,132 @@
+.NavBar {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 5px;
+  font-size: 3vw;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.Sticky {
+  position: fixed;
+  top: 0;
+}
+
+.NavBar img {
+  height: 100%;
+  width: 108px;
+}
+
+.inactive {
+  color: #e5e5e5;
+  margin: 0;
+  padding-right: 15px;
+  cursor: pointer;
+  font-weight: lighter;
+  transition: color .4s;
+  text-decoration: none;
+}
+
+.NavBar a:hover {
+  color: grey;
+}
+
+.active {
+  font-weight: normal;
+  color: white;
+}
+
+.LinkContainer {
+  margin-right: auto;
+}
+
+.Horizontal {
+  display: none;
+}
+
+.Vertical {
+  display: block;
+}
+
+.ExtraOptions {
+  display: none;
+}
+
+.DropdownNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.OptionsContainer {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+}
+
+.OptionsContainer > * {
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.NavBar > * {
+  padding: 5px;
+}
+
+@media(min-width: 600px) {
+  .NavBar {
+    font-size: 1vw;
+  }
+
+  .NavBar img {
+    width: 168px;
+  }
+
+  .NavBar > * {
+    margin: 10px;
+  }
+
+  .OptionsContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0;
+    height: 80%;
+  }
+
+  .LinkContainer {
+    margin-right: auto;
+  }
+
+  .OptionsContainer > * {
+    margin-right: 25px;
+  }
+
+  .ExtraOptions {
+    display: block;
+  }
+}
+
+@media(min-width: 860px) {
+    .Horizontal {
+        display: block;
+    }
+    
+    .Vertical {
+        display: none;
+    }    
+}
+
+@media(min-width: 1650px) {
+    .NavBar {
+        height: 90px;
+        font-size: 1.2vw;
+    }
+}

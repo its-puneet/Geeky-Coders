@@ -1,0 +1,13 @@
+.Button {
+    display: inline-block;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem; 
+}
+
+@media(max-height: 600px) {
+    .Button {
+        font-size: 0.9rem;
+    }
+}

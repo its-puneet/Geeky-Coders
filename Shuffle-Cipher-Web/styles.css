@@ -1,0 +1,176 @@
+@media only screen and (max-width:1000px) {
+    textarea {
+        background: #020617;
+        border: 1px solid #00C0C4;
+        border-radius: 10px;
+        color: green;
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-weight: bold;
+        resize: none;
+    }
+    #enc {
+        background: #03C6D2;
+        box-shadow: 0px 0px 50px 0.5px rgba(29, 205, 230, 0.5);
+        border-radius: 10px;
+        color: green;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    div.container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 1024px;
+        align-items: center;
+        padding: 10px;
+        background-color: aquamarine;
+        width: 100%;
+        background-image: url('assets/background.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #CIPHER {
+        background: #03C6D2;
+        box-shadow: 0px 0px 30px 0.5px #1DCDE6;
+        border-radius: 50px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    body {
+        background-image: url("assets/background.png");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #main-header {
+        color: white;
+        box-sizing: border-box;
+        position: top;
+        /* width: 956px;
+            height: 103px;
+            left: 500px;
+            top: 95px;*/
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 115px;
+        text-align: center;
+        letter-spacing: 0.27em;
+        /*border: 3px solid rgba(251, 251, 251, 0.69);*/
+        text-shadow: 0px 0px 50px rgba(251, 251, 251, 0.69);
+    }
+    #enc:hover {
+        border: 5px solid green;
+    }
+    #enc {
+        transition: all 0.2s ease-in-out;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        position: absolute;
+        width: 284px;
+        height: 57px;
+        left: 722px;
+        top: 264px;
+        background: #03C6D2;
+        box-shadow: 0px 0px 50px 0.5px rgba(29, 205, 230, 0.5);
+        border-radius: 10px;
+    }
+    .cont {
+        box-sizing: border-box;
+        color: green;
+        position: absolute;
+        width: 744px;
+        height: 458px;
+        left: 89px;
+        top: 387px;
+        background: #020617;
+        border: 1px solid #00C0C4;
+        border-radius: 10px;
+        font-size: 26px;
+    }
+    .font {
+        color: green;
+        box-sizing: border-box;
+        position: absolute;
+        width: 744px;
+        height: 458px;
+        left: 890px;
+        top: 387px;
+        background: #020617;
+        border: 1px solid #00C0C4;
+        border-radius: 10px;
+        font-size: 26px;
+    }
+    #CIPHER:hover {
+        border: 5px solid green;
+    }
+    #CIPHER {
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        width: 284px;
+        height: 80px;
+        left: 722px;
+        top: 911px;
+        background: #03C6D2;
+        box-shadow: 0px 0px 30px 0.5px #1DCDE6;
+        border-radius: 50px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 47px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+        color: #020617;
+    }
+    #BUTT {
+        position: absolute;
+        width: 147px;
+        height: 47px;
+        left: 790px;
+        top: 927px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 47px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+        color: #020617;
+    }
+    .opt {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 35px;
+        letter-spacing: 0.04em;
+        color: rgba(251, 251, 251, 0.93);
+        box-sizing: border-box;
+        position: absolute;
+        width: 284px;
+        height: 174px;
+        left: 722px;
+        top: 300px;
+        background: #004246;
+        border: 1px solid #03C6D2;
+        box-shadow: 0px 0px 30px 0.5px rgba(0, 66, 70, 0.5);
+        border-radius: 10px;
+    }
+}

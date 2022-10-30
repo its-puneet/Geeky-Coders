@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 :root {
   --white: #fff;
   --black: #1c2b2d;
@@ -50,10 +50,11 @@ img {
   flex-direction: column;
 }
 
-.main h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
+.main h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
   margin-bottom: 2rem;
+  font-family: 'Kaushan Script', cursive;
 }
 
 .slider {
