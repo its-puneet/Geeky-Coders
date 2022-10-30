@@ -1,43 +1,31 @@
-# Geeky-Coders
+# sumitmangela.github.io/hotel
 
-All About Programming Contributors of Hacktoberfest 2022. This is a simple repo that helps new Open Source developers to start with contributions.
+It is a front-end for a simple hotel booking site. The site is developed using HTML/CSS and jquery plugins are used to provide extra features. There are total 5 webpages of the website.
 
-![image](https://user-images.githubusercontent.com/1830380/193360152-0902f5c1-2565-45ae-9975-aa44a0c2c933.png)
+* Home Page - 
+It is a indroductionary page about the hotel itself. It contains various images of the hotel which are slided in a conware fashion using an image slider. It also contains details about the rooms and a link to rooms page. It also shows free features that hotel provides to every visitor. Some reviews that hotel recieved over the years are also represented in a conware fashion. and finally a button which links to hotel booking facility.
+The image sliders (carousels) for rooms and reviews are draggable for the swift use of mobile users.
+Every page execpt booking page has a button which links redirects user to booking facility.
+Footer of every page contains some details about the hotel and address of the hotel along with the social links for the hotel.
+Scroll to top facility is also provided which redirects user to the top of the page along with a subtle animation when user clicks on a button. 
 
-## What is Hacktoberfest?
+* Explore Page - 
+It is a descriptive page for the various features hotel provides. New features can be easily added along with an image. The page follows principle of Minimalism and provides just the features nothing more.
 
-It is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
+* Rooms Page - 
+This page provides all the details about the rooms available in the hotel. When you hover over any of the room the details of that room will pe presented to you with a linear transition which is achieved with pure CSS3.
 
-- Hacktoberfest is a celebration open to everyone in our global community.
-- Pull requests can be made in any GitHub-hosted repositories/projects with [hacktoberfest](https://github.com/search?q=hacktoberfest) topic added.
-- You can sign up anytime between October 1 and October 31.
-***
-# 👕 Why Should I Contribute?
-Hacktoberfest has a plain and simple moto
-> Support open source with meaningful PRs and earn a limited edition T-shirt!
-So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop. On plus side, you will get into beautiful world of open source.<br>
-Working with open source project is a rewarding experience that allows you to practice your talent, collaborate with and learn from others, and give back to the developer community. 
-### NOTE:
-* making four out of (4/4) meaningful contributions to open source projects will qualify you for prizes
-* Scripts to be added in there respective folder with proper doumentaion.
-* Read GUIDELINES.md before making a PR.
+* Booking Page - 
+This is the page which has the booking faciltiy of the hotel. The form contains inputs for name, email-id, type of rooms, Number of rooms, and number of visitors. For number of rooms and visitors spinner buttons are provided (-,+) using a jquery plugin. For Date of Arrival and departure a datepicker jquery plugin is used.
 
-***
+* Contact Page - 
+This page can be used to contact the hotel by filling a simple form. It also serves purpose of providing the location of hotel in google maps. The location of hotel and zoom levels of the map can be easily modified.
 
-## IMPORTANT INSTRUCTIONS
-You must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs made before or after that won't be counted!!
 
-Visit the hactoberfest site for more details :- https://hacktoberfest.digitalocean.com
+# Jquey Plugins used for the website
 
-Check out the [contribution guidelines](./CONTRIBUTING.md) for more information on how to contribute.
+* Image slider - Slick Slider - https://github.com/kenwheeler/slick
+* Scroll to top - Scrollup - https://github.com/markgoodyear/scrollup
+* Datepicker - pickmeup - https://github.com/nazar-pc/PickMeUp
+* Spinner buttons - Handle Counter - https://github.com/nick-running/handle-counter
 
-You can contribute in the field of:
-
-* Web Development
-* Machine Learning
-* Front End Development
-* Back End APIs
-* Data Science
-* Full stack
-* App Development
-* And lot more...
