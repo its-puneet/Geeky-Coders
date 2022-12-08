@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(28, 96, 243);
+  text-align: center;
+  color: aliceblue;
+}
+
+header {
+  background: rgb(54, 54, 54);
+  padding: 10px;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+}
+
+input {
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  padding: 10px;
+}
+
+section button {
+  padding: 5px 7px;
+  margin: 15px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  background: rgb(54, 54, 54);
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+section button:hover {
+  background: rgb(39, 39, 39);
+}
+
+.randomNum {
+  /* background: rgb(73, 73, 73); */
+  width: 90%;
+  margin: 20px auto;
+}
