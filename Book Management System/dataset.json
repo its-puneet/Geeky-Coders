@@ -1,0 +1,702 @@
+[
+ {
+   "id": 1,
+   "title": "Things Fall Apart",
+   "author": "Chinua Achebe",
+   "pages": 209,
+   "year": 1958
+ },
+ {
+   "id": 2,
+   "title": "Fairy tales",
+   "author": "Hans Christian Andersen",
+   "pages": 784,
+   "year": 1836
+ },
+ {
+   "id": 3,
+   "title": "The Divine Comedy",
+   "author": "Dante Alighieri",
+   "pages": 928,
+   "year": 1315
+ },
+ {
+   "id": 4,
+   "title": "The Epic Of Gilgamesh",
+   "author": "Unknown",
+   "pages": 160,
+   "year": -1700
+ },
+ {
+   "id": 5,
+   "title": "The Book Of Job",
+   "author": "Unknown",
+   "pages": 176,
+   "year": -600
+ },
+ {
+   "id": 6,
+   "title": "One Thousand and One Nights",
+   "author": "Unknown",
+   "pages": 288,
+   "year": 1200
+ },
+ {
+   "id": 7,
+   "title": "Njál's Saga",
+   "author": "Unknown",
+   "pages": 384,
+   "year": 1350
+ },
+ {
+   "id": 8,
+   "title": "Pride and Prejudice",
+   "author": "Jane Austen",
+   "pages": 226,
+   "year": 1813
+ },
+ {
+   "id": 9,
+   "title": "Le Père Goriot",
+   "author": "Honoré de Balzac",
+   "pages": 443,
+   "year": 1835
+ },
+ {
+   "id": 10,
+   "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+   "author": "Samuel Beckett",
+   "pages": 256,
+   "year": 1952
+ },
+ {
+   "id": 11,
+   "title": "The Decameron",
+   "author": "Giovanni Boccaccio",
+   "pages": 1024,
+   "year": 1351
+ },
+ {
+   "id": 12,
+   "title": "Ficciones",
+   "author": "Jorge Luis Borges",
+   "pages": 224,
+   "year": 1965
+ },
+ {
+   "id": 13,
+   "title": "Wuthering Heights",
+   "author": "Emily Brontë",
+   "pages": 342,
+   "year": 1847
+ },
+ {
+   "id": 14,
+   "title": "The Stranger",
+   "author": "Albert Camus",
+   "pages": 185,
+   "year": 1942
+ },
+ {
+   "id": 15,
+   "title": "Poems",
+   "author": "Paul Celan",
+   "pages": 320,
+   "year": 1952
+ },
+ {
+   "id": 16,
+   "title": "Journey to the End of the Night",
+   "author": "Louis-Ferdinand Céline",
+   "pages": 505,
+   "year": 1932
+ },
+ {
+   "id": 17,
+   "title": "Don Quijote De La Mancha",
+   "author": "Miguel de Cervantes",
+   "pages": 1056,
+   "year": 1610
+ },
+ {
+   "id": 18,
+   "title": "The Canterbury Tales",
+   "author": "Geoffrey Chaucer",
+   "pages": 544,
+   "year": 1450
+ },
+ {
+   "id": 19,
+   "title": "Stories",
+   "author": "Anton Chekhov",
+   "pages": 194,
+   "year": 1886
+ },
+ {
+   "id": 20,
+   "title": "Nostromo",
+   "author": "Joseph Conrad",
+   "pages": 320,
+   "year": 1904
+ },
+ {
+   "id": 21,
+   "title": "Great Expectations",
+   "author": "Charles Dickens",
+   "pages": 194,
+   "year": 1861
+ },
+ {
+   "id": 22,
+   "title": "Jacques the Fatalist",
+   "author": "Denis Diderot",
+   "pages": 596,
+   "year": 1796
+ },
+ {
+   "id": 23,
+   "title": "Berlin Alexanderplatz",
+   "author": "Alfred Döblin",
+   "pages": 600,
+   "year": 1929
+ },
+ {
+   "id": 24,
+   "title": "Crime and Punishment",
+   "author": "Fyodor Dostoevsky",
+   "pages": 551,
+   "year": 1866
+ },
+ {
+   "id": 25,
+   "title": "The Idiot",
+   "author": "Fyodor Dostoevsky",
+   "pages": 656,
+   "year": 1869
+ },
+ {
+   "id": 26,
+   "title": "The Possessed",
+   "author": "Fyodor Dostoevsky",
+   "pages": 768,
+   "year": 1872
+ },
+ {
+   "id": 27,
+   "title": "The Brothers Karamazov",
+   "author": "Fyodor Dostoevsky",
+   "pages": 824,
+   "year": 1880
+ },
+ {
+   "id": 28,
+   "title": "Middlemarch",
+   "author": "George Eliot",
+   "pages": 800,
+   "year": 1871
+ },
+ {
+   "id": 29,
+   "title": "Invisible Man",
+   "author": "Ralph Ellison",
+   "pages": 581,
+   "year": 1952
+ },
+ {
+   "id": 30,
+   "title": "Medea",
+   "author": "Euripides",
+   "pages": 104,
+   "year": -431
+ },
+ {
+   "id": 31,
+   "title": "Absalom, Absalom!",
+   "author": "William Faulkner",
+   "pages": 313,
+   "year": 1936
+ },
+ {
+   "id": 32,
+   "title": "The Sound and the Fury",
+   "author": "William Faulkner",
+   "pages": 326,
+   "year": 1929
+ },
+ {
+   "id": 33,
+   "title": "Madame Bovary",
+   "author": "Gustave Flaubert",
+   "pages": 528,
+   "year": 1857
+ },
+ {
+   "id": 34,
+   "title": "Sentimental Education",
+   "author": "Gustave Flaubert",
+   "pages": 606,
+   "year": 1869
+ },
+ {
+   "id": 35,
+   "title": "Gypsy Ballads",
+   "author": "Federico García Lorca",
+   "pages": 218,
+   "year": 1928
+ },
+ {
+   "id": 36,
+   "title": "One Hundred Years of Solitude",
+   "author": "Gabriel García Márquez",
+   "pages": 417,
+   "year": 1967
+ },
+ {
+   "id": 37,
+   "title": "Love in the Time of Cholera",
+   "author": "Gabriel García Márquez",
+   "pages": 368,
+   "year": 1985
+ },
+ {
+   "id": 38,
+   "title": "Faust",
+   "author": "Johann Wolfgang von Goethe",
+   "pages": 158,
+   "year": 1832
+ },
+ {
+   "id": 39,
+   "title": "Dead Souls",
+   "author": "Nikolai Gogol",
+   "pages": 432,
+   "year": 1842
+ },
+ {
+   "id": 40,
+   "title": "The Tin Drum",
+   "author": "Günter Grass",
+   "pages": 600,
+   "year": 1959
+ },
+ {
+   "id": 41,
+   "title": "The Devil to Pay in the Backlands",
+   "author": "João Guimarães Rosa",
+   "pages": 494,
+   "year": 1956
+ },
+ {
+   "id": 42,
+   "title": "Hunger",
+   "author": "Knut Hamsun",
+   "pages": 176,
+   "year": 1890
+ },
+ {
+   "id": 43,
+   "title": "The Old Man and the Sea",
+   "author": "Ernest Hemingway",
+   "pages": 128,
+   "year": 1952
+ },
+ {
+   "id": 44,
+   "title": "Iliad",
+   "author": "Homer",
+   "pages": 608,
+   "year": -735
+ },
+ {
+   "id": 45,
+   "title": "Odyssey",
+   "author": "Homer",
+   "pages": 374,
+   "year": -800
+ },
+ {
+   "id": 46,
+   "title": "A Doll's House",
+   "author": "Henrik Ibsen",
+   "pages": 68,
+   "year": 1879
+ },
+ {
+   "id": 47,
+   "title": "Ulysses",
+   "author": "James Joyce",
+   "pages": 228,
+   "year": 1922
+ },
+ {
+   "id": 48,
+   "title": "Stories",
+   "author": "Franz Kafka",
+   "pages": 488,
+   "year": 1924
+ },
+ {
+   "id": 49,
+   "title": "The Trial",
+   "author": "Franz Kafka",
+   "pages": 160,
+   "year": 1925
+ },
+ {
+   "id": 50,
+   "title": "The Castle",
+   "author": "Franz Kafka",
+   "pages": 352,
+   "year": 1926
+ },
+ {
+   "id": 51,
+   "title": "The recognition of Shakuntala",
+   "author": "Kālidāsa",
+   "pages": 147,
+   "year": 150
+ },
+ {
+   "id": 52,
+   "title": "The Sound of the Mountain",
+   "author": "Yasunari Kawabata",
+   "pages": 288,
+   "year": 1954
+ },
+ {
+   "id": 53,
+   "title": "Zorba the Greek",
+   "author": "Nikos Kazantzakis",
+   "pages": 368,
+   "year": 1946
+ },
+ {
+   "id": 54,
+   "title": "Sons and Lovers",
+   "author": "D. H. Lawrence",
+   "pages": 432,
+   "year": 1913
+ },
+ {
+   "id": 55,
+   "title": "Independent People",
+   "author": "Halldór Laxness",
+   "pages": 470,
+   "year": 1934
+ },
+ {
+   "id": 56,
+   "title": "Poems",
+   "author": "Giacomo Leopardi",
+   "pages": 184,
+   "year": 1818
+ },
+ {
+   "id": 57,
+   "title": "The Golden Notebook",
+   "author": "Doris Lessing",
+   "pages": 688,
+   "year": 1962
+ },
+ {
+   "id": 58,
+   "title": "Pippi Longstocking",
+   "author": "Astrid Lindgren",
+   "pages": 160,
+   "year": 1945
+ },
+ {
+   "id": 59,
+   "title": "Diary of a Madman",
+   "author": "Lu Xun",
+   "pages": 389,
+   "year": 1918
+ },
+ {
+   "id": 60,
+   "title": "Children of Gebelawi",
+   "author": "Naguib Mahfouz",
+   "pages": 355,
+   "year": 1959
+ },
+ {
+   "id": 61,
+   "title": "Buddenbrooks",
+   "author": "Thomas Mann",
+   "pages": 736,
+   "year": 1901
+ },
+ {
+   "id": 62,
+   "title": "The Magic Mountain",
+   "author": "Thomas Mann",
+   "pages": 720,
+   "year": 1924
+ },
+ {
+   "id": 63,
+   "title": "Moby Dick",
+   "author": "Herman Melville",
+   "pages": 378,
+   "year": 1851
+ },
+ {
+   "id": 64,
+   "title": "Essays",
+   "author": "Michel de Montaigne",
+   "pages": 404,
+   "year": 1595
+ },
+ {
+   "id": 65,
+   "title": "History",
+   "author": "Elsa Morante",
+   "pages": 600,
+   "year": 1974
+ },
+ {
+   "id": 66,
+   "title": "Beloved",
+   "author": "Toni Morrison",
+   "pages": 321,
+   "year": 1987
+ },
+ {
+   "id": 67,
+   "title": "The Tale of Genji",
+   "author": "Murasaki Shikibu",
+   "pages": 1360,
+   "year": 1006
+ },
+ {
+   "id": 68,
+   "title": "The Man Without Qualities",
+   "author": "Robert Musil",
+   "pages": 365,
+   "year": 1931
+ },
+ {
+   "id": 69,
+   "title": "Lolita",
+   "author": "Vladimir Nabokov",
+   "pages": 317,
+   "year": 1955
+ },
+ {
+   "id": 70,
+   "title": "Nineteen Eighty-Four",
+   "author": "George Orwell",
+   "pages": 272,
+   "year": 1949
+ },
+ {
+   "id": 71,
+   "title": "Metamorphoses",
+   "author": "Ovid",
+   "pages": 576,
+   "year": 100
+ },
+ {
+   "id": 72,
+   "title": "The Book of Disquiet",
+   "author": "Fernando Pessoa",
+   "pages": 272,
+   "year": 1928
+ },
+ {
+   "id": 73,
+   "title": "Tales",
+   "author": "Edgar Allan Poe",
+   "pages": 842,
+   "year": 1950
+ },
+ {
+   "id": 74,
+   "title": "In Search of Lost Time",
+   "author": "Marcel Proust",
+   "pages": 2408,
+   "year": 1920
+ },
+ {
+   "id": 75,
+   "title": "Gargantua and Pantagruel",
+   "author": "François Rabelais",
+   "pages": 623,
+   "year": 1533
+ },
+ {
+   "id": 76,
+   "title": "Pedro Páramo",
+   "author": "Juan Rulfo",
+   "pages": 124,
+   "year": 1955
+ },
+ {
+   "id": 77,
+   "title": "The Masnavi",
+   "author": "Rumi",
+   "pages": 438,
+   "year": 1236
+ },
+ {
+   "id": 78,
+   "title": "Midnight's Children",
+   "author": "Salman Rushdie",
+   "pages": 536,
+   "year": 1981
+ },
+ {
+   "id": 79,
+   "title": "Bostan",
+   "author": "Saadi",
+   "pages": 298,
+   "year": 1257
+ },
+ {
+   "id": 80,
+   "title": "Season of Migration to the North",
+   "author": "Tayeb Salih",
+   "pages": 139,
+   "year": 1966
+ },
+ {
+   "id": 81,
+   "title": "Blindness",
+   "author": "José Saramago",
+   "pages": 352,
+   "year": 1995
+ },
+ {
+   "id": 82,
+   "title": "Hamlet",
+   "author": "William Shakespeare",
+   "pages": 432,
+   "year": 1603
+ },
+ {
+   "id": 83,
+   "title": "King Lear",
+   "author": "William Shakespeare",
+   "pages": 384,
+   "year": 1608
+ },
+ {
+   "id": 84,
+   "title": "Othello",
+   "author": "William Shakespeare",
+   "pages": 314,
+   "year": 1609
+ },
+ {
+   "id": 85,
+   "title": "Oedipus the King",
+   "author": "Sophocles",
+   "pages": 88,
+   "year": -430
+ },
+ {
+   "id": 86,
+   "title": "The Red and the Black",
+   "author": "Stendhal",
+   "pages": 576,
+   "year": 1830
+ },
+ {
+   "id": 87,
+   "title": "The Life And Opinions of Tristram Shandy",
+   "author": "Laurence Sterne",
+   "pages": 640,
+   "year": 1760
+ },
+ {
+   "id": 88,
+   "title": "Confessions of Zeno",
+   "author": "Italo Svevo",
+   "pages": 412,
+   "year": 1923
+ },
+ {
+   "id": 89,
+   "title": "Gulliver's Travels",
+   "author": "Jonathan Swift",
+   "pages": 178,
+   "year": 1726
+ },
+ {
+   "id": 90,
+   "title": "War and Peace",
+   "author": "Leo Tolstoy",
+   "pages": 1296,
+   "year": 1867
+ },
+ {
+   "id": 91,
+   "title": "Anna Karenina",
+   "author": "Leo Tolstoy",
+   "pages": 864,
+   "year": 1877
+ },
+ {
+   "id": 92,
+   "title": "The Death of Ivan Ilyich",
+   "author": "Leo Tolstoy",
+   "pages": 92,
+   "year": 1886
+ },
+ {
+   "id": 93,
+   "title": "The Adventures of Huckleberry Finn",
+   "author": "Mark Twain",
+   "pages": 224,
+   "year": 1884
+ },
+ {
+   "id": 94,
+   "title": "Ramayana",
+   "author": "Valmiki",
+   "pages": 152,
+   "year": -450
+ },
+ {
+   "id": 95,
+   "title": "The Aeneid",
+   "author": "Virgil",
+   "pages": 442,
+   "year": -23
+ },
+ {
+   "id": 96,
+   "title": "Mahabharata",
+   "author": "Vyasa",
+   "pages": 276,
+   "year": -700
+ },
+ {
+   "id": 97,
+   "title": "Leaves of Grass",
+   "author": "Walt Whitman",
+   "pages": 152,
+   "year": 1855
+ },
+ {
+   "id": 98,
+   "title": "Mrs Dalloway",
+   "author": "Virginia Woolf",
+   "pages": 216,
+   "year": 1925
+ },
+ {
+   "id": 99,
+   "title": "To the Lighthouse",
+   "author": "Virginia Woolf",
+   "pages": 209,
+   "year": 1927
+ },
+ {
+   "id": 100,
+   "title": "Memoirs of Hadrian",
+   "author": "Marguerite Yourcenar",
+   "pages": 408,
+   "year": 1951
+ }
+]
