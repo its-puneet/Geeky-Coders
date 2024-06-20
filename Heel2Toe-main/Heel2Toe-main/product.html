@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/allbtns.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" style="flex-wrap: nowrap;">
+        <a href="index.html" class="logo-top">Heel2Toe</a>
+        <ul>
+          <li class="top-nav-link">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="#men">Men</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="women.html">Women</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="./kids.html">Kids</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="#new">New Arrivals</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="trending.html">Trending</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="best.html">Best Sellers</a>
+          </li>
+          <li class="top-nav-link">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="menu-icon">
+          <div class="bar-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="super_container">
+        <header class="header" style="display: none;">
+          <div class="header_main">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+                  <div class="header_search">
+                    <div class="header_search_content">
+                      <div class="header_search_form_container">
+                        <form action="#" class="header_search_form clearfix">
+                          <div class="custom_dropdown">
+                            <div class="custom_dropdown_list">
+                              <span class="custom_dropdown_placeholder clc">All Categories</span>
+                              <i class="fas fa-chevron-down"></i>
+                              <ul class="custom_list clc">
+                                <li>
+                                  <a class="clc" href="#">All Categories</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="single_product">
+            <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
+              <div class="row">
+                <div class="col-lg-4 order-lg-2 order-1">
+                  <span>
+                    <b>Customers Rating - </b>
+                  </span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span>(43000)</span>
+                  <div class="image_selected">
+                    <img src="./images/women4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-6 order-3">
+                  <div class="product_description">
+                    <div class="product_name">Product Name - Lorem ipsum</div>
+                    <div>
+                      <span class="product_price">₹ 29,000</span>
+                      <strike class="product_discount">
+                        <span style='color:black'>₹ 31,000 </span>
+                      </strike>
+                    </div>
+                    <div>
+                      <span class="product_saved">You Saved:</span>
+                      <span style='color:black'>₹ 2,000 </span>
+                    </div>
+                    <hr class="singleline">
+                    <div>
+                      <span class="product_info"> Product Discription : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. <br>
+                      </span>
+                    </div>
+                    <hr class="singleline">
+                    <div class="order_info d-flex flex-row">
+                      <!-- <form action="#"> -->
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6" style="margin-left: 13px;">
+                        <div class="product_quantity">
+                          <span>QTY: </span>
+                          <input id="quantity_input" type="text" pattern="[0-9]*" value="1" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;">
+                          <div style="margin-left: 13px;" class="quantity_buttons">
+                            <div id="quantity_inc_button" class="quantity_inc quantity_control">
+                              <i class="fas fa-chevron-up"></i>
+                            </div>
+                            <div id="quantity_dec_button" class="quantity_dec quantity_control">
+                              <i class="fas fa-chevron-down"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="margin-left: 13px;" class="col-xs-6">
+                        <button type="button" style="background:rgb(221, 84, 29); border:none;" class="btn btn-primary shop-button">Add to Cart</button>
+                        <button type="button" class="btn btn-success shop-button">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <footer class="footer">
+      <p>Copyright &copy; 2021 Heel2toe</p>
+    </footer>
+    <!-- sceript for toggle nav -->
+    <script>
+      const icon = document.querySelector(".menu-icon");
+      const navList = document.querySelector(".nav ul");
+      icon.addEventListener("click", function() {
+        navList.classList.toggle("showing");
+      })
+    </script>
+    <!--Script for increasing the QTY-->
+    <script>
+        const increase_btn = document.querySelector("#quantity_inc_button");
+        const decrease_btn = document.querySelector("#quantity_dec_button");
+        
+        increase_btn.addEventListener("click", function(){
+              let qty_val = document.querySelector("#quantity_input").value
+              document.querySelector("#quantity_input").value = parseInt(qty_val) + 1;
+        });
+        
+        decrease_btn.addEventListener("click", function(){
+              let qty_val = document.querySelector("#quantity_input").value
+              if(parseInt(qty_val) - 1 >= 0){
+                document.querySelector("#quantity_input").value = parseInt(qty_val) - 1;
+              }
+        });
+    </script>
+  </body>
+</html>
