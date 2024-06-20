@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="portfoliostyle.css">
+<title>comment section</title>
+</head>
+<body>
+<div class="wrapper">
+  <form action="" method="POST" class="form">
+    <div class="row">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" required></input>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required></input>
+      </div>
+    </div>
+    <div class="input-group textarea">
+      <label for="comment">Comment</label>
+      <textarea id="comment" name="comment" placeholder="Enter your Comment" required></textarea>
+    </div>
+    <div class="input-group">
+      <a href="javascript:void(0);" id="submit-button" class="clickpost">Post Comment</a>
+      <script>
+        $(document).ready(function () {
+  $("#submit-button").click(function (event) {
+    var formData = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      comment: $("#comment").val(),
+    };
+
+    $.ajax({
+      type: "POST",
+      url: "http://localhost/contact.php",
+      data: formData,
+      dataType: "json",
+      encode: true,
+    }).done(function (data) {
+      console.log(data);
+      if(data==1)
+      {
+        alert("Thank you for contacting!");
+      }
+      else{
+        alert("Try again");
+      }
+    });
+    event.preventDefault();
+  });
+});
+      </script>
+    </div>
+  </form>
+</div>
+</body>
+</html>
